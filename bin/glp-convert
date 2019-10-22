@@ -1,0 +1,53 @@
+#!/bin/bash
+# glp-convert to=lp *.mps
+# see also [LPsolve doc on file formats](http://lpsolve.sourceforge.net/5.5/formulate.htm)
+# note that glpk .mod is gmpl, not ampl
+
+to=lp
+
+help() {
+	cat <<!
+--------------------------------------------------------------------------------
+glp-convert  [to=glp / lp / mps / freemps]  file*.glp / file*.lp / file*.mod / file*.mps
+	converts e.g. file*.mod to file*.lp, gmpl to cplex
+	default: to=lp, cplex format
+--------------------------------------------------------------------------------
+!
+	exit
+}
+
+case $1 in
+to=* )
+	export "$1"
+	shift
+esac
+
+if [[ ! -f $1 ]]; then
+	echo "Error: $0: no file $1"
+	exit 1
+	fi
+
+glpread() {  # .mod -> --model etc.
+	case ${1%.gz} in
+	*.glp )	echo --glp ;;
+	*.lp )	echo --lp ;;  # cplex
+	*.mod )	echo --model ;;  # gmpl math prog lang
+	*.mps )	echo --freemps ;;
+	* )		exec echo >&2  "? $1 should be .glp .lp .mod or .mps"
+	esac
+}
+
+#...............................................................................
+for file
+do
+	base=${file##*/}
+	base=${base%%.*}
+	echo "
+-- $file > $base.$to"
+
+	glpsol --check \
+		`glpread $file` $file \
+		--w$to $base.$to \
+		--log $base.convertlog
+done
+

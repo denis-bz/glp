@@ -1,0 +1,58 @@
+#!/bin/bash
+opt=--simplex
+# opt="--interior ..."
+prefix=  # out=$prefix$base$suffix
+suffix=
+
+help() {
+	cat <<!
+--------------------------------------------------------------------------------
+glpsols [opt='$opt ...']  *.glp / .lp / .mod / .mps
+	glpsol each file  > *.sol *.glpsollog
+--------------------------------------------------------------------------------
+!
+	exit
+}
+
+case $1 in -h | --help | "" )
+	help
+esac
+
+glpread() {  # .mod -> --model etc.
+	case ${1%.gz} in
+	*.glp )	echo --glp ;;
+	*.lp )	echo --lp ;;  # cplex
+	*.mod )	echo --model ;;  # gmpl math prog lang
+	*.mps )	echo --freemps ;;
+	* )		echo >&2  "? $1 should be .glp .lp .mod or .mps"
+			exit
+	esac
+}
+
+	# export leading args name=val --
+while [[ $1 == *=* ]]; do
+	export "$1"  # opt='--interior --nomip --cuts --tmlim 60'
+	shift
+done
+
+
+for file
+do
+	base=${file##*/}
+	base=${base%%.*}
+	out=$prefix$base$suffix
+	log=$out.glpsollog
+
+cat <<!
+
+--------------------------------------------------------------------------------
+glpsol $opt  `glpread $file` $file  --log $log  -w $out.sol.gz
+!
+
+	/usr/bin/time \
+	glpsol $opt  `glpread $file` $file  --log $log  -w $out.sol.gz  2> $out.time
+	cat $out.time >> $log
+	rm $out.time
+
+done
+

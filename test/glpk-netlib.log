@@ -1,0 +1,2182 @@
+
+================================================================================
+from test-glp-glpk.py netlib/zib/mps/25fv47.mps.gz netlib/zib/mps/80bau3b.mps.gz netlib/zib/mps/adlittle.mps.gz netlib/zib/mps/afiro.mps.gz netlib/zib/mps/agg.mps.gz netlib/zib/mps/agg2.mps.gz netlib/zib/mps/agg3.mps.gz netlib/zib/mps/bandm.mps.gz netlib/zib/mps/beaconfd.mps.gz netlib/zib/mps/blend.mps.gz netlib/zib/mps/bnl1.mps.gz netlib/zib/mps/bnl2.mps.gz netlib/zib/mps/boeing1.mps.gz netlib/zib/mps/boeing2.mps.gz netlib/zib/mps/bore3d.mps.gz netlib/zib/mps/capri.mps.gz netlib/zib/mps/cycle.mps.gz netlib/zib/mps/czprob.mps.gz netlib/zib/mps/d2q06c.mps.gz netlib/zib/mps/d6cube.mps.gz netlib/zib/mps/degen2.mps.gz netlib/zib/mps/degen3.mps.gz netlib/zib/mps/dfl001.mps.gz netlib/zib/mps/e226.mps.gz netlib/zib/mps/etamacro.mps.gz netlib/zib/mps/fffff800.mps.gz netlib/zib/mps/finnis.mps.gz netlib/zib/mps/fit1d.mps.gz netlib/zib/mps/fit1p.mps.gz netlib/zib/mps/fit2d.mps.gz netlib/zib/mps/fit2p.mps.gz netlib/zib/mps/forplan.mps.gz netlib/zib/mps/ganges.mps.gz netlib/zib/mps/gfrd-pnc.mps.gz netlib/zib/mps/greenbea.mps.gz netlib/zib/mps/greenbeb.mps.gz netlib/zib/mps/grow15.mps.gz netlib/zib/mps/grow22.mps.gz netlib/zib/mps/grow7.mps.gz netlib/zib/mps/israel.mps.gz netlib/zib/mps/kb2.mps.gz netlib/zib/mps/lotfi.mps.gz netlib/zib/mps/maros-r7.mps.gz netlib/zib/mps/maros.mps.gz netlib/zib/mps/modszk1.mps.gz netlib/zib/mps/nesm.mps.gz netlib/zib/mps/perold.mps.gz netlib/zib/mps/pilot-ja.mps.gz netlib/zib/mps/pilot-we.mps.gz netlib/zib/mps/pilot.mps.gz netlib/zib/mps/pilot4.mps.gz netlib/zib/mps/pilot87.mps.gz netlib/zib/mps/pilotnov.mps.gz netlib/zib/mps/recipe.mps.gz netlib/zib/mps/sc105.mps.gz netlib/zib/mps/sc205.mps.gz netlib/zib/mps/sc50a.mps.gz netlib/zib/mps/sc50b.mps.gz netlib/zib/mps/scagr25.mps.gz netlib/zib/mps/scagr7.mps.gz netlib/zib/mps/scfxm1.mps.gz netlib/zib/mps/scfxm2.mps.gz netlib/zib/mps/scfxm3.mps.gz netlib/zib/mps/scorpion.mps.gz netlib/zib/mps/scrs8.mps.gz netlib/zib/mps/scsd1.mps.gz netlib/zib/mps/scsd6.mps.gz netlib/zib/mps/scsd8.mps.gz netlib/zib/mps/sctap1.mps.gz netlib/zib/mps/sctap2.mps.gz netlib/zib/mps/sctap3.mps.gz netlib/zib/mps/seba.mps.gz netlib/zib/mps/share1b.mps.gz netlib/zib/mps/share2b.mps.gz netlib/zib/mps/shell.mps.gz netlib/zib/mps/sierra.mps.gz netlib/zib/mps/stair.mps.gz netlib/zib/mps/standata.mps.gz netlib/zib/mps/standmps.mps.gz netlib/zib/mps/stocfor1.mps.gz netlib/zib/mps/stocfor2.mps.gz netlib/zib/mps/stocfor3.mps.gz netlib/zib/mps/truss.mps.gz netlib/zib/mps/tuff.mps.gz netlib/zib/mps/vtp-base.mps.gz netlib/zib/mps/wood1p.mps.gz netlib/zib/mps/woodw.mps.gz   Wed Sep 11 12:38:54 2019
+versions: numpy 1.16.5  scipy 1.2.2  python 2.7.15 
+params: solver simplex 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/25fv47.mps.gz
+Reading problem data from 'netlib/zib/mps/25fv47.mps.gz'...
+Problem: 25FV47
+Objective: R0000
+822 rows, 1571 columns, 11127 non-zeros
+6919 records were read
+One free row was removed
+
+lp_to_gnulp: A (821, 1571), 10400 non0 
+
+{ gnulp_solve 25FV47 simplex  821 rows, 1571 cols   
+Scaling...
+ A: min|aij| =  2.000e-04  max|aij| =  2.389e+02  ratio =  1.195e+06
+GM: min|aij| =  7.647e-02  max|aij| =  1.308e+01  ratio =  1.710e+02
+EQ: min|aij| =  5.847e-03  max|aij| =  1.000e+00  ratio =  1.710e+02
+obj: 5501.85  status: opt feas  25FV47 simplex  821 rows, 1571 cols   
+x: [53 0 0 34 0 7.3 0 17 3e+02 0 ... 1.7 95 0 32 38 0 0 0 0 0]
+y: [0 2.8 2.9 2.8 9.5 8.8 8.3 7.3 7.1 6.2 ... -2.6 -2.4 -3.4 -3.2 -2.3 -3 -3.1 -3.1 -3.2 -2.7]
+}
+
+time:  0.3  0.3 sec  glpk simplex 25FV47
+x: ||max 2.1e+03 at 12  quantiles: [-1.1e-14 0 0 0 8.6 39 2.1e+03] 
+c*x: min -6.5e+02 = -6.5 * 1e+02 at 1522  quantiles: [-6.5e+02 0 0 0 0 1.5 2.9e+03] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/80bau3b.mps.gz
+Reading problem data from 'netlib/zib/mps/80bau3b.mps.gz'...
+Problem: 80BAU3B
+Objective: HOLLY
+2263 rows, 9799 columns, 29063 non-zeros
+23732 records were read
+One free row was removed
+
+lp_to_gnulp: A (2262, 9799), 21002 non0 
+
+{ gnulp_solve 80BAU3B simplex  2262 rows, 9799 cols   
+Scaling...
+ A: min|aij| =  2.200e-04  max|aij| =  1.047e+02  ratio =  4.761e+05
+GM: min|aij| =  1.626e-01  max|aij| =  6.151e+00  ratio =  3.783e+01
+EQ: min|aij| =  2.667e-02  max|aij| =  1.000e+00  ratio =  3.750e+01
+obj: 987224  status: opt feas  80BAU3B simplex  2262 rows, 9799 cols   
+x: [5.3e+02 2.9e+02 5.4e+02 9e+02 1.8e+03 1.6e+03 1.1e+03 3.6e+02 3.5e+02 7.7e+02 ... 2.6e+02 7.8 5.6 32 87 2.8 5.8e+02 41 1.2e+03 1.1e+02]
+y: [0 0 0 0 0 0 0 0 0 0 ... 2.7 0 0.11 0.11 0 0.0064 1.2 0.79 0.14 0.2]
+}
+
+time:  1.0  1.0 sec  glpk simplex 80BAU3B
+x: ||max 1e+05 at 4775  quantiles: [-87 0 0 0 0.0004 35 1e+05] 
+c*x: min -1.7e+04 = -21 * 8.2e+02 at 8246  quantiles: [-1.7e+04 0 0 0 0 33 1.4e+05] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/adlittle.mps.gz
+Reading problem data from 'netlib/zib/mps/adlittle.mps.gz'...
+Problem: ADLITTLE
+Objective: .Z....
+57 rows, 97 columns, 465 non-zeros
+335 records were read
+One free row was removed
+
+lp_to_gnulp: A (56, 97), 383 non0 
+
+{ gnulp_solve ADLITTLE simplex  56 rows, 97 cols   
+Scaling...
+ A: min|aij| =  1.200e-03  max|aij| =  6.430e+01  ratio =  5.358e+04
+GM: min|aij| =  1.455e-01  max|aij| =  6.871e+00  ratio =  4.721e+01
+EQ: min|aij| =  2.130e-02  max|aij| =  1.000e+00  ratio =  4.694e+01
+obj: 225495  status: opt feas  ADLITTLE simplex  56 rows, 97 cols   
+x: [23 0.55 4.6 0 0 35 4.8 2.9 0 0 ... 0 0 0 0 13 8.7 0 31 0 0]
+y: [-3.3e+03 7.8e+02 -59 -7.6e+02 -3.3e+03 -7.7e+02 -0.46 0 -0.67 -1.8e-14 ... -7.7e+02 -4.5e+02 1.2e-13 -3.6e+02 2 0 0 -1.1e+02 -7.7e+02 0]
+}
+
+time:  0.0  0.0 sec  glpk simplex ADLITTLE
+x: ||max 3.2e+02 at 77  quantiles: [0 0 0 0 13 53 3.2e+02] 
+c*x: min -7.5e+04 = -3.3e+03 * 23 at 0  quantiles: [-7.5e+04 -5e+03 0 0 0 1.2e+04 1.3e+05] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/afiro.mps.gz
+Reading problem data from 'netlib/zib/mps/afiro.mps.gz'...
+Problem: AFIRO
+Objective: COST
+28 rows, 32 columns, 88 non-zeros
+83 records were read
+One free row was removed
+
+lp_to_gnulp: A (27, 32), 83 non0 
+
+{ gnulp_solve AFIRO simplex  27 rows, 32 cols   
+Scaling...
+ A: min|aij| =  1.070e-01  max|aij| =  2.429e+00  ratio =  2.270e+01
+Problem data seem to be well scaled
+obj: -464.753  status: opt feas  AFIRO simplex  27 rows, 32 cols   
+x: [80 26 55 85 18 0 0 0 0 0 ... 0 0 0 0 0 0 3.4e+02 3.8e+02 0 0]
+y: [-0.63 -5.6e-17 -0.34 -0.23 -5.6e-17 0 0 0 0 0 ... 0 0 0 0 -0.63 0 -0.94 0 0 0]
+}
+
+time:  0.0  0.0 sec  glpk simplex AFIRO
+x: ||max 5e+02 at 15  quantiles: [0 0 0 0 33 3.3e+02 5e+02] 
+c*x: min -2.9e+02 = -0.6 * 4.8e+02 at 16  quantiles: [-2.9e+02 -5.2 0 0 0 0 0] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/agg.mps.gz
+Reading problem data from 'netlib/zib/mps/agg.mps.gz'...
+Problem: AGG
+Objective: OBJECTIV
+489 rows, 163 columns, 2541 non-zeros
+2046 records were read
+One free row was removed
+
+lp_to_gnulp: A (488, 163), 2410 non0 
+
+{ gnulp_solve AGG simplex  488 rows, 163 cols   
+Scaling...
+ A: min|aij| =  2.000e-05  max|aij| =  4.240e+02  ratio =  2.120e+07
+GM: min|aij| =  5.316e-02  max|aij| =  1.881e+01  ratio =  3.539e+02
+EQ: min|aij| =  2.838e-03  max|aij| =  1.000e+00  ratio =  3.524e+02
+obj: -3.59918e+07  status: opt feas  AGG simplex  488 rows, 163 cols   
+x: [0 0 0 0 1.4e+03 0 0 2.3e+05 0 0 ... 0 0 0 0 0 0 0 0 0 0]
+y: [0 0 0 0 0 0 0 0 0 0 ... 19 20 4.7e-15 0 0 0 0.16 0.16 -7.7e-16 46]
+}
+
+time:  0.0  0.0 sec  glpk simplex AGG
+x: ||max 9.6e+05 at 83  quantiles: [0 0 0 0 1.4e+03 6.8e+04 9.6e+05] 
+c*x: min -6.5e+06 = -28 * 2.3e+05 at 7  quantiles: [-6.5e+06 -6e+05 0 0 -0 0 0] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/agg2.mps.gz
+Reading problem data from 'netlib/zib/mps/agg2.mps.gz'...
+Problem: AGG2
+Objective: OBJECTIV
+517 rows, 302 columns, 4515 non-zeros
+3097 records were read
+One free row was removed
+
+lp_to_gnulp: A (516, 302), 4284 non0 
+
+{ gnulp_solve AGG2 simplex  516 rows, 302 cols   
+Scaling...
+ A: min|aij| =  2.000e-05  max|aij| =  4.240e+02  ratio =  2.120e+07
+GM: min|aij| =  5.316e-02  max|aij| =  1.881e+01  ratio =  3.539e+02
+EQ: min|aij| =  2.838e-03  max|aij| =  1.000e+00  ratio =  3.524e+02
+obj: -2.02393e+07  status: opt feas  AGG2 simplex  516 rows, 302 cols   
+x: [1.5e+04 0 0 0 0 7e+03 2.1e+04 4e+04 4e+04 1.1e+04 ... 0 0 0 0 0 0 0 0 0 0]
+y: [0 0 0 0 0 0 0 0 0 0 ... 0 0 0 0 12 0 0 0 0 46]
+}
+
+time:  0.0  0.0 sec  glpk simplex AGG2
+x: ||max 3.3e+05 at 36  quantiles: [0 0 0 0 1.9e+03 4.3e+04 3.3e+05] 
+c*x: min -2e+06 = -25 * 8e+04 at 15  quantiles: [-2e+06 -3.1e+05 0 0 -0 -0 4e+06] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/agg3.mps.gz
+Reading problem data from 'netlib/zib/mps/agg3.mps.gz'...
+Problem: AGG3
+Objective: OBJECTIV
+517 rows, 302 columns, 4531 non-zeros
+3101 records were read
+One free row was removed
+
+lp_to_gnulp: A (516, 302), 4300 non0 
+
+{ gnulp_solve AGG3 simplex  516 rows, 302 cols   
+Scaling...
+ A: min|aij| =  2.000e-05  max|aij| =  4.240e+02  ratio =  2.120e+07
+GM: min|aij| =  5.316e-02  max|aij| =  1.881e+01  ratio =  3.539e+02
+EQ: min|aij| =  2.838e-03  max|aij| =  1.000e+00  ratio =  3.524e+02
+obj: 1.03121e+07  status: opt feas  AGG3 simplex  516 rows, 302 cols   
+x: [1.5e+04 0 0 0 0 7e+03 2.1e+04 4e+04 4e+04 1.1e+04 ... 0 0 0 0 1.7e+03 0 0 0 0 0]
+y: [0 0 0 0 0 0 0 0 0 0 ... 0 0 0 0 -1e+02 0 0 0 0 46]
+}
+
+time:  0.0  0.0 sec  glpk simplex AGG3
+x: ||max 4.1e+05 at 138  quantiles: [0 0 0 0 2.1e+03 4.9e+04 4.1e+05] 
+c*x: min -2e+06 = -25 * 8e+04 at 15  quantiles: [-2e+06 -2.8e+05 0 0 -0 -0 9.8e+06] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/bandm.mps.gz
+Reading problem data from 'netlib/zib/mps/bandm.mps.gz'...
+Problem: BANDM
+Objective: ....1
+306 rows, 472 columns, 2659 non-zeros
+1857 records were read
+One free row was removed
+
+lp_to_gnulp: A (305, 472), 2494 non0 
+
+{ gnulp_solve BANDM simplex  305 rows, 472 cols   
+Scaling...
+ A: min|aij| =  1.000e-03  max|aij| =  2.000e+02  ratio =  2.000e+05
+GM: min|aij| =  3.794e-02  max|aij| =  2.636e+01  ratio =  6.948e+02
+EQ: min|aij| =  1.439e-03  max|aij| =  1.000e+00  ratio =  6.948e+02
+obj: -158.628  status: opt feas  BANDM simplex  305 rows, 472 cols   
+x: [0 0 0 0.34 0 0 0 13 0 0 ... 0.34 2.8 9 6 1.8 0.2 0.2 4.8 0.023 0.89]
+y: [-1 -0.21 -0.31 -0.29 0.091 -0.038 -0.57 -0.5 1.7 -1 ... -4e-16 1.4e-15 0 -6.2e-14 -4.2 -4.1 -4.2 -3.3e-14 0 -0.059]
+}
+
+time:  0.0  0.0 sec  glpk simplex BANDM
+x: ||max 1e+03 at 292  quantiles: [0 0 0 0.35 2.9 13 1e+03] 
+c*x: min -1e+02 = -5.9 * 18 at 116  quantiles: [-1e+02 -0.81 0 0 0 0 1.8e+02] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/beaconfd.mps.gz
+Reading problem data from 'netlib/zib/mps/beaconfd.mps.gz'...
+Problem: BEACONFD
+Objective: 11CSTR
+174 rows, 262 columns, 3476 non-zeros
+2013 records were read
+One free row was removed
+
+lp_to_gnulp: A (173, 262), 3375 non0 
+
+{ gnulp_solve BEACONFD simplex  173 rows, 262 cols   
+Scaling...
+ A: min|aij| =  1.200e-03  max|aij| =  5.000e+02  ratio =  4.167e+05
+GM: min|aij| =  5.764e-02  max|aij| =  1.735e+01  ratio =  3.010e+02
+EQ: min|aij| =  3.355e-03  max|aij| =  1.000e+00  ratio =  2.980e+02
+obj: 33592.5  status: opt feas  BEACONFD simplex  173 rows, 262 cols   
+x: [3.9 0 89 0 -5.4e-13 0 1.1 72 0 1.4e+02 ... 0 0 0 0 18 0 0 1.1e+02 0 0]
+y: [0 0 0 0 0 0 0 0 0 0 ... 2.8 2.7 0 0 0 5 0 0 4.1 0]
+}
+
+time:  0.0  0.0 sec  glpk simplex BEACONFD
+x: ||max 2.4e+03 at 62  quantiles: [-5.4e-13 0 0 0 21 3.6e+02 2.4e+03] 
+c*x: min -3e-13 = 0.56 * -5.4e-13 at 4  quantiles: [-3e-13 0 0 0 0 88 6.6e+03] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/blend.mps.gz
+Reading problem data from 'netlib/zib/mps/blend.mps.gz'...
+Problem: BLEND
+Objective: C
+75 rows, 83 columns, 521 non-zeros
+359 records were read
+One free row was removed
+
+lp_to_gnulp: A (74, 83), 491 non0 
+
+{ gnulp_solve BLEND simplex  74 rows, 83 cols   
+Scaling...
+ A: min|aij| =  3.000e-03  max|aij| =  6.600e+01  ratio =  2.200e+04
+GM: min|aij| =  2.020e-01  max|aij| =  4.950e+00  ratio =  2.451e+01
+EQ: min|aij| =  4.118e-02  max|aij| =  1.000e+00  ratio =  2.428e+01
+obj: -30.8121  status: opt feas  BLEND simplex  74 rows, 83 cols   
+x: [21 10 11 3 0.66 0.48 -1.2e-15 10 -3.9e-15 1.7 ... 0 0 0 0.17 0 1.2 0 0.8 26 87]
+y: [-3.6 -3.5 -2.9 -2.9 -3 -2.9 -2 -1.4 -2.8 -2.8 ... -0.66 -0.76 0 0 0 -1.2 -0.83 0 -0.09 -0.36]
+}
+
+time:  0.0  0.0 sec  glpk simplex BLEND
+x: ||max 87 at 82  quantiles: [-2e-14 0 0 0.75 3 10 87] 
+c*x: min -43 = -5.4 * 8.1 at 36  quantiles: [-43 0 0 0 0 0.32 67] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/bnl1.mps.gz
+Reading problem data from 'netlib/zib/mps/bnl1.mps.gz'...
+Problem: BNL1
+Objective: OBJ
+644 rows, 1175 columns, 6129 non-zeros
+4115 records were read
+One free row was removed
+
+lp_to_gnulp: A (643, 1175), 5121 non0 
+
+{ gnulp_solve BNL1 simplex  643 rows, 1175 cols   
+Scaling...
+ A: min|aij| =  1.100e-03  max|aij| =  7.800e+01  ratio =  7.091e+04
+GM: min|aij| =  2.684e-01  max|aij| =  3.726e+00  ratio =  1.388e+01
+EQ: min|aij| =  7.422e-02  max|aij| =  1.000e+00  ratio =  1.347e+01
+obj: 1977.63  status: opt feas  BNL1 simplex  643 rows, 1175 cols   
+x: [82 82 23 23 1.4e+02 1.4e+02 59 59 1.8e+02 1.8e+02 ... 0.23 0 0.75 0.056 0.12 0.15 0 0.24 0.24 0]
+y: [1 1 1 1 0.73 1 12 1 0.78 1 ... 0 0 0 0.07 0 0 0 0 0 0]
+}
+
+time:  0.1  0.1 sec  glpk simplex BNL1
+x: ||max 1.5e+03 at 865  quantiles: [-2.1e-12 0 0 0 0.48 14 1.5e+03] 
+c*x: min -1.8 = -0.28 * 6.3 at 294  quantiles: [-1.8 0 0 0 5e-06 1.5 2e+02] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/bnl2.mps.gz
+Reading problem data from 'netlib/zib/mps/bnl2.mps.gz'...
+Problem: BNL2
+Objective: OBJ
+2325 rows, 3489 columns, 16124 non-zeros
+11498 records were read
+One free row was removed
+
+lp_to_gnulp: A (2324, 3489), 13999 non0 
+
+{ gnulp_solve BNL2 simplex  2324 rows, 3489 cols   
+Scaling...
+ A: min|aij| =  6.000e-04  max|aij| =  7.800e+01  ratio =  1.300e+05
+GM: min|aij| =  2.968e-01  max|aij| =  3.370e+00  ratio =  1.135e+01
+EQ: min|aij| =  8.807e-02  max|aij| =  1.000e+00  ratio =  1.135e+01
+obj: 1811.24  status: opt feas  BNL2 simplex  2324 rows, 3489 cols   
+x: [42 42 33 33 1.2e+02 0 0 1.2e+02 0 0 ... 0 0 0 0 0 0 0 0 0 0]
+y: [1e-14 2.4e-16 0 0 -1.2e-14 9.2e-15 0.88 0 2.9 0 ... -0.0018 0 0 0 0 0 0 0 0 0]
+}
+
+time:  0.6  0.6 sec  glpk simplex BNL2
+x: ||max 2.1e+03 at 3078  quantiles: [-7.8e-15 0 0 0 0.51 25 2.1e+03] 
+c*x: min -13 = -0.38 * 35 at 122  quantiles: [-13 0 0 0 0 0.11 1.9e+02] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/boeing1.mps.gz
+Reading problem data from 'netlib/zib/mps/boeing1.mps.gz'...
+Problem: BOEING1
+Objective: OBJECTIV
+352 rows, 384 columns, 3865 non-zeros
+2636 records were read
+One free row was removed
+
+lp_to_gnulp: A (351, 384), 3485 non0 
+
+{ gnulp_solve BOEING1 simplex  351 rows, 384 cols   
+Scaling...
+ A: min|aij| =  1.132e-02  max|aij| =  3.103e+03  ratio =  2.741e+05
+GM: min|aij| =  2.288e-01  max|aij| =  4.371e+00  ratio =  1.911e+01
+EQ: min|aij| =  5.468e-02  max|aij| =  1.000e+00  ratio =  1.829e+01
+obj: -335.214  status: opt feas  BOEING1 simplex  351 rows, 384 cols   
+x: [0 12 0 0 14 0 0 0 0 49 ... 1 0 0 0.073 0 0 0 0 4.7 20]
+y: [0 0 0.4 0 0 0 0 0 0 0 ... 0 0.0042 0 0 0.05 0.0056 0 0.0056 0 0.0039]
+}
+
+time:  0.0  0.0 sec  glpk simplex BOEING1
+x: ||max 1.9e+03 at 163  quantiles: [-81 0 0 0.2 14 98 1.9e+03] 
+c*x: min -57 = -0.03 * 1.9e+03 at 163  quantiles: [-57 -7.7 -0.31 0 0.025 3.2 40] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/boeing2.mps.gz
+Reading problem data from 'netlib/zib/mps/boeing2.mps.gz'...
+Problem: BOEING2
+Objective: OBJECTIV
+167 rows, 143 columns, 1339 non-zeros
+970 records were read
+One free row was removed
+
+lp_to_gnulp: A (166, 143), 1196 non0 
+
+{ gnulp_solve BOEING2 simplex  166 rows, 143 cols   
+Scaling...
+ A: min|aij| =  1.000e-02  max|aij| =  3.000e+03  ratio =  3.000e+05
+GM: min|aij| =  9.298e-02  max|aij| =  1.076e+01  ratio =  1.157e+02
+EQ: min|aij| =  8.741e-03  max|aij| =  1.000e+00  ratio =  1.144e+02
+obj: -315.019  status: opt feas  BOEING2 simplex  166 rows, 143 cols   
+x: [3e+02 0 0 0 0 7.1e+02 2.7e+02 0 1.4e+03 0 ... 0 0 2.7 0 0 0 14 0 14 0]
+y: [0 0 0 0 0 0 0 0 0 0 ... 0 -0.63 -0.34 -0.75 -0.68 -0.34 -0.16 -0.37 0 0]
+}
+
+time:  0.0  0.0 sec  glpk simplex BOEING2
+x: ||max 1.4e+03 at 8  quantiles: [-77 0 0 0 7.1 2.5e+02 1.4e+03] 
+c*x: min -48 = -0.068 * 7.1e+02 at 32  quantiles: [-48 -12 0 -0 -0 2.1 22] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/bore3d.mps.gz
+Reading problem data from 'netlib/zib/mps/bore3d.mps.gz'...
+Problem: BORE3D
+Objective: FAT0..J.
+234 rows, 315 columns, 1525 non-zeros
+1074 records were read
+One free row was removed
+
+lp_to_gnulp: A (233, 315), 1429 non0 
+
+{ gnulp_solve BORE3D simplex  233 rows, 315 cols   
+Scaling...
+ A: min|aij| =  1.000e-04  max|aij| =  1.427e+03  ratio =  1.427e+07
+GM: min|aij| =  5.857e-02  max|aij| =  1.707e+01  ratio =  2.915e+02
+EQ: min|aij| =  3.493e-03  max|aij| =  1.000e+00  ratio =  2.863e+02
+obj: 1373.08  status: opt feas  BORE3D simplex  233 rows, 315 cols   
+x: [2.9 0 0 0 0 0 0 0 0 0 ... 0 0 4 3.9 0 0 0 0 0 0]
+y: [0 0.54 0 -48 0 0 0 0 0 -49 ... 0 0 0 0 0 0 0 0 0 0]
+}
+
+time:  0.0  0.0 sec  glpk simplex BORE3D
+x: ||max 9.4e+03 at 109  quantiles: [-5.8e-16 0 0 0 2 15 9.4e+03] 
+c*x: min -4 = -1 * 4 at 56  quantiles: [-4 0 0 0 0 2.8 6.4e+02] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/capri.mps.gz
+Reading problem data from 'netlib/zib/mps/capri.mps.gz'...
+Problem: CAPRI
+Objective: OBJEC
+272 rows, 353 columns, 1786 non-zeros
+1456 records were read
+One free row was removed
+
+lp_to_gnulp: A (271, 353), 1767 non0 
+
+{ gnulp_solve CAPRI simplex  271 rows, 353 cols   
+Scaling...
+ A: min|aij| =  9.000e-05  max|aij| =  2.177e+02  ratio =  2.419e+06
+GM: min|aij| =  2.536e-02  max|aij| =  3.944e+01  ratio =  1.555e+03
+EQ: min|aij| =  6.429e-04  max|aij| =  1.000e+00  ratio =  1.555e+03
+obj: 2690.01  status: opt feas  CAPRI simplex  271 rows, 353 cols   
+x: [5.1e+03 2.7e+02 2.6 65 3.5e+02 54 2.1e+02 2.5e+02 1.2e+03 2.9e+02 ... 10 10 0 0 0 0 0.82 0.4 0 0]
+y: [-0.42 1 0.057 0.94 0 -0.4 -0.34 -0.94 0.94 -1 ... -1.8 -1 2.2e+02 -0.63 0 -49 -33 0 0 0.9]
+}
+
+time:  0.0  0.0 sec  glpk simplex CAPRI
+x: ||max 5.1e+03 at 0  quantiles: [0 0 1 3.2 49 3.4e+02 5.1e+03] 
+c*x: min -23 = -0.28 * 83 at 138  quantiles: [-23 0 0 0 0 0 2.2e+03] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/cycle.mps.gz
+Reading problem data from 'netlib/zib/mps/cycle.mps.gz'...
+Problem: CYCLE
+Objective: B...FR..
+1904 rows, 2857 columns, 21322 non-zeros
+13461 records were read
+One free row was removed
+
+lp_to_gnulp: A (1903, 2857), 20720 non0 
+
+{ gnulp_solve CYCLE simplex  1903 rows, 2857 cols   
+Scaling...
+ A: min|aij| =  1.000e-05  max|aij| =  9.106e+02  ratio =  9.106e+07
+GM: min|aij| =  6.950e-03  max|aij| =  1.439e+02  ratio =  2.070e+04
+EQ: min|aij| =  4.831e-05  max|aij| =  1.000e+00  ratio =  2.070e+04
+obj: -5.22639  status: opt feas  CYCLE simplex  1903 rows, 2857 cols   
+x: [0 0 0 4.2e+02 10 0 31 0 0 0 ... 4 6.5 3.8 0 0.58 0 1.1 0 0.15 0]
+y: [0 0 -1.3e-18 0 0 0 0.0011 0 0 0.0011 ... 0 0 0 0 0 0 0 0 0 0]
+}
+
+time:  0.1  0.1 sec  glpk simplex CYCLE
+x: ||max 1.7e+04 at 2085  quantiles: [0 0 0 0 0 0 1.7e+04] 
+c*x: min -2.8 = -0.093 * 30 at 1798  quantiles: [-2.8 0 0 0 0 0 0] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/czprob.mps.gz
+Reading problem data from 'netlib/zib/mps/czprob.mps.gz'...
+Problem: CZPROB
+Objective: ..COST
+930 rows, 3523 columns, 14173 non-zeros
+8762 records were read
+One free row was removed
+
+lp_to_gnulp: A (929, 3523), 10669 non0 
+
+{ gnulp_solve CZPROB simplex  929 rows, 3523 cols   
+Scaling...
+ A: min|aij| =  1.570e-03  max|aij| =  1.370e+02  ratio =  8.726e+04
+GM: min|aij| =  4.618e-01  max|aij| =  2.165e+00  ratio =  4.689e+00
+EQ: min|aij| =  2.133e-01  max|aij| =  1.000e+00  ratio =  4.689e+00
+obj: 2.1852e+06  status: opt feas  CZPROB simplex  929 rows, 3523 cols   
+x: [0 0 81 0 0 0 0 2.7e+02 0 0 ... 0 0 0 0 0 0 0 0 0 28]
+y: [1 -1.6e+03 -1.6e+03 -2.3e+03 -2.4e+03 -1.5e+03 -6.8e+02 -2.3e+03 -2.9e+03 -3.9e+03 ... 0 0 0 2.1e+02 1.8e+02 1.8e+02 1.6e+02 1.6e+02
+ 1.5e+02 1.5e+02]
+}
+
+time:  0.1  0.1 sec  glpk simplex CZPROB
+x: ||max 1.2e+04 at 3460  quantiles: [0 0 0 0 0 37 1.2e+04] 
+c*x: min -6e+04 = -66 * 9.1e+02 at 2873  quantiles: [-6e+04 -92 0 0 0 1.2e+03 7.1e+04] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/d2q06c.mps.gz
+Reading problem data from 'netlib/zib/mps/d2q06c.mps.gz'...
+Problem: D2Q06C
+Objective: R0000
+2172 rows, 5167 columns, 35674 non-zeros
+21783 records were read
+One free row was removed
+
+lp_to_gnulp: A (2171, 5167), 32417 non0 
+
+{ gnulp_solve D2Q06C simplex  2171 rows, 5167 cols   
+Scaling...
+ A: min|aij| =  2.000e-04  max|aij| =  2.323e+03  ratio =  1.161e+07
+GM: min|aij| =  2.040e-02  max|aij| =  4.903e+01  ratio =  2.403e+03
+EQ: min|aij| =  4.161e-04  max|aij| =  1.000e+00  ratio =  2.403e+03
+obj: 122784  status: opt feas  D2Q06C simplex  2171 rows, 5167 cols   
+x: [0 0 1.3e+05 2e+02 0 55 2.5e+02 1.8e+02 41 0 ... 3.7e+02 0 11 61 25 0 42 8.8 1e+02 0]
+y: [-0.16 -2.5 0 -2.6 0 0 0 -0.039 0 0 ... 0 0 0 0 -0.46 -0.15 -0.054 -0.52 -0.6 0.63]
+}
+
+time:  2.3  2.3 sec  glpk simplex D2Q06C
+x: ||max 1.3e+05 at 2  quantiles: [-9.2e-16 0 0 0 4.9 45 1.3e+05] 
+c*x: min -3.2e+03 = -8.8 * 3.7e+02 at 5157  quantiles: [-3.2e+03 0 0 0 0 3.3 8.7e+03] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/d6cube.mps.gz
+Reading problem data from 'netlib/zib/mps/d6cube.mps.gz'...
+Problem: D6CUBE
+Objective: 1
+416 rows, 6184 columns, 43888 non-zeros
+23896 records were read
+One free row was removed
+
+lp_to_gnulp: A (415, 6184), 37704 non0 
+
+{ gnulp_solve D6CUBE simplex  415 rows, 6184 cols   
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  3.600e+02  ratio =  3.600e+02
+GM: min|aij| =  2.251e-01  max|aij| =  4.442e+00  ratio =  1.973e+01
+EQ: min|aij| =  5.199e-02  max|aij| =  1.000e+00  ratio =  1.924e+01
+obj: 315.492  status: opt feas  D6CUBE simplex  415 rows, 6184 cols   
+x: [4.6 0 0 0 0 0 0 0 0 0 ... 0 0 -1.4e-16 0 0 0 0 0 0 1]
+y: [0.057 0.38 0.12 0.4 0.024 0.087 -0.21 0.26 0.24 0.24 ... -1.3 -0.39 -2.6 -0.068 -0.24 0.21 0.038 0.01 0.0011 6.8]
+}
+
+time:  1.4  1.4 sec  glpk simplex D6CUBE
+x: ||max 30 at 96  quantiles: [-9.5e-13 0 0 0 0 0 30] 
+c*x: min -9.5e-13 = 1 * -9.5e-13 at 5137  quantiles: [-9.5e-13 0 0 0 0 0 30] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/degen2.mps.gz
+Reading problem data from 'netlib/zib/mps/degen2.mps.gz'...
+Problem: DEGEN2
+Objective: OBJ.ROW
+445 rows, 534 columns, 4449 non-zeros
+2938 records were read
+One free row was removed
+
+lp_to_gnulp: A (444, 534), 3978 non0 
+
+{ gnulp_solve DEGEN2 simplex  444 rows, 534 cols   
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+obj: -1435.18  status: opt feas  DEGEN2 simplex  444 rows, 534 cols   
+x: [1 0 1 0 0.2 0.8 0 1 0.8 0.2 ... 0 0 0 0 0 2 0 -3.3e-16 0 0]
+y: [-9.8 -19 -15 1.8 5.5 0.82 -2 1.2 -13 -10 ... 0 -10 -2 -1.1 0 0 -1.1 -14 -3.2 0]
+}
+
+time:  0.0  0.0 sec  glpk simplex DEGEN2
+x: ||max 4 at 509  quantiles: [-8.9e-16 0 0 0 1 1 4] 
+c*x: min -48 = -48 * 1 at 67  quantiles: [-48 -11 -2.9 0 -0 -0 4.3] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/degen3.mps.gz
+Reading problem data from 'netlib/zib/mps/degen3.mps.gz'...
+Problem: DEGEN3
+Objective: OBJ.ROW
+1504 rows, 1818 columns, 26230 non-zeros
+15368 records were read
+One free row was removed
+
+lp_to_gnulp: A (1503, 1818), 24646 non0 
+
+{ gnulp_solve DEGEN3 simplex  1503 rows, 1818 cols   
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+obj: -987.294  status: opt feas  DEGEN3 simplex  1503 rows, 1818 cols   
+x: [0 1 1 0 1.1e-16 1 0 1 1 4.4e-16 ... 0 0 0 0 0 0 0 0 -8.9e-16 0]
+y: [-1.6 -5.7 -7.5 -8.9 0.43 -2.1 -5.8 -0.68 -0.91 -2.8 ... 0 -2.3 0 -3 -1.3 0 -3.3 -4.9 -1.6 -2.4]
+}
+
+time:  0.4  0.4 sec  glpk simplex DEGEN3
+x: ||max 9.8 at 1639  quantiles: [-2.1e-15 0 0 0 1 1 9.8] 
+c*x: min -19 = -19 * 1 at 178  quantiles: [-19 -2.3 -0.29 -0 -0 4.3e-16 2.8] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/dfl001.mps.gz
+Reading problem data from 'netlib/zib/mps/dfl001.mps.gz'...
+Problem: DFL001
+Objective: NIL
+6072 rows, 12230 columns, 41873 non-zeros
+29923 records were read
+One free row was removed
+
+lp_to_gnulp: A (6071, 12230), 35632 non0 
+
+{ gnulp_solve DFL001 simplex  6071 rows, 12230 cols   
+Scaling...
+ A: min|aij| =  8.333e-02  max|aij| =  2.000e+00  ratio =  2.400e+01
+GM: min|aij| =  5.946e-01  max|aij| =  1.682e+00  ratio =  2.828e+00
+EQ: min|aij| =  3.536e-01  max|aij| =  1.000e+00  ratio =  2.828e+00
+obj: 1.12664e+07  status: opt feas  DFL001 simplex  6071 rows, 12230 cols   
+x: [0.17 0 0 0 0 0 0.52 0 0 0 ... 0 2.7 0 0 -5.8e-16 0 8.8e-17 0 0 0]
+y: [0 1.1e+07 -1e+07 -1e+07 2.3e+03 2.2e+05 9.4e+06 -1.4e+05 -1.6e+02 -9.8e+06 ... -9.8e+06 -1.7e+05 -5.8e+05 1.1e+05 -1e+07 -9.8e+06 0
+ 2.3e+05 -3e+05 -5.9e+05]
+}
+
+time: 34.9 34.9 sec  glpk simplex DFL001
+x: ||max 1.1e+02 at 5999  quantiles: [-6.5e-11 0 0 0 0.064 1 1.1e+02] 
+c*x: min -3.8e-07 = 5.8e+03 * -6.5e-11 at 9155  quantiles: [-3.8e-07 0 0 0 0 5.8e-11 2.4e+06] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/e226.mps.gz
+Reading problem data from 'netlib/zib/mps/e226.mps.gz'...
+Problem: E226
+Objective: ...000
+224 rows, 282 columns, 2767 non-zeros
+1733 records were read
+One free row was removed
+
+lp_to_gnulp: A (223, 282), 2578 non0 
+
+{ gnulp_solve E226 simplex  223 rows, 282 cols   
+Scaling...
+ A: min|aij| =  2.600e-04  max|aij| =  1.486e+03  ratio =  5.716e+06
+GM: min|aij| =  6.165e-02  max|aij| =  1.622e+01  ratio =  2.631e+02
+EQ: min|aij| =  3.800e-03  max|aij| =  1.000e+00  ratio =  2.631e+02
+obj: -18.7519  status: opt feas  E226 simplex  223 rows, 282 cols   
+x: [0.2 0.095 0.043 0 0.21 0 0 5.8 0.077 0 ... 0 0 0.46 0 0 0.44 0 0 0 0]
+y: [0 0.075 0 -0.0019 0.06 0.074 0 0 -0.024 -0.03 ... -0.41 0 -0.54 0 0 -0.098 -1.4 -3.5 -3 -2.2]
+}
+
+time:  0.0  0.0 sec  glpk simplex E226
+x: ||max 1e+02 at 99  quantiles: [0 0 0 0 0.29 1.6 1e+02] 
+c*x: min -16 = -5.3 * 2.9 at 26  quantiles: [-16 -0.052 0 0 0 0.0011 12] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/etamacro.mps.gz
+Reading problem data from 'netlib/zib/mps/etamacro.mps.gz'...
+Problem: ETAMACRO
+Objective: OPTIMALG
+401 rows, 688 columns, 2489 non-zeros
+2084 records were read
+One free row was removed
+
+lp_to_gnulp: A (400, 688), 2409 non0 
+
+{ gnulp_solve ETAMACRO simplex  400 rows, 688 cols   
+Scaling...
+ A: min|aij| =  1.900e-02  max|aij| =  2.000e+03  ratio =  1.053e+05
+GM: min|aij| =  3.700e-01  max|aij| =  2.703e+00  ratio =  7.306e+00
+EQ: min|aij| =  1.386e-01  max|aij| =  1.000e+00  ratio =  7.215e+00
+obj: -755.715  status: opt feas  ETAMACRO simplex  400 rows, 688 cols   
+x: [3.8 4.1 4.6 7 7.5 6.2 7.3 7.5 9.6 10 ... 0.13 0 0 0 0 0 0 0 0 0]
+y: [-0.78 -0.41 -0.21 -0.11 -0.06 -0.033 -0.018 -0.01 -0.0059 -0.0034 ... 0 0 0 0 -1.1 -2.4 -4.7 -4.9 -1.9 -0.46]
+}
+
+time:  0.0  0.0 sec  glpk simplex ETAMACRO
+x: ||max 74 at 227  quantiles: [-5.4e-15 0 0 0.013 1 10 74] 
+c*x: min -3.9e+02 = -1e+02 * 3.8 at 0  quantiles: [-3.9e+02 0 0 0 0 0 1.6e+02] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/fffff800.mps.gz
+Reading problem data from 'netlib/zib/mps/fffff800.mps.gz'...
+Problem: FFFFF800
+Objective: ..COST..
+525 rows, 854 columns, 6235 non-zeros
+3845 records were read
+One free row was removed
+
+lp_to_gnulp: A (524, 854), 6227 non0 
+
+{ gnulp_solve FFFFF800 simplex  524 rows, 854 cols   
+Scaling...
+ A: min|aij| =  8.000e-03  max|aij| =  1.090e+05  ratio =  1.362e+07
+GM: min|aij| =  9.958e-02  max|aij| =  1.004e+01  ratio =  1.008e+02
+EQ: min|aij| =  9.929e-03  max|aij| =  1.000e+00  ratio =  1.007e+02
+obj: 555680  status: opt feas  FFFFF800 simplex  524 rows, 854 cols   
+x: [0 0 0 0 0 0 0 0 0 0 ... 38 1.4e+05 3e+04 3.4e+04 5.8e+04 6.4e+04 6.2e+04 6.3e+04 1.1e+05 1.5e+03]
+y: [0 0 -8.7e-14 0 0 0 0 -6.2e-13 0 0 ... -1 -1 -1 -1 -1 -1 0 1.3e+05 0 -47]
+}
+
+time:  0.0  0.0 sec  glpk simplex FFFFF800
+x: ||max 2.5e+05 at 554  quantiles: [-1.3e-11 0 0 0 62 1.1e+03 2.5e+05] 
+c*x: min 0 = 0 * 0 at 0  quantiles: [0 0 0 0 0 0 1.4e+05] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/finnis.mps.gz
+Reading problem data from 'netlib/zib/mps/finnis.mps.gz'...
+Problem: FINNIS
+Objective: PRICER
+498 rows, 614 columns, 2714 non-zeros
+2180 records were read
+One free row was removed
+
+lp_to_gnulp: A (497, 614), 2310 non0 
+
+{ gnulp_solve FINNIS simplex  497 rows, 614 cols   
+Scaling...
+ A: min|aij| =  4.610e-04  max|aij| =  3.200e+01  ratio =  6.941e+04
+GM: min|aij| =  8.663e-02  max|aij| =  1.154e+01  ratio =  1.333e+02
+EQ: min|aij| =  7.778e-03  max|aij| =  1.000e+00  ratio =  1.286e+02
+obj: 172791  status: opt feas  FINNIS simplex  497 rows, 614 cols   
+x: [3.1e+03 3.1e+03 3e+03 0 0 0 24 4.5e+02 7.3e+02 2.3e+02 ... 0 0 0 0 0 0 0 0 0 0]
+y: [16 24 0 28 45 29 25 25 6.1e-16 21 ... 0 -4.1e-16 0 0 -9.8e-16 0 0 0 0 0]
+}
+
+time:  0.0  0.0 sec  glpk simplex FINNIS
+x: ||max 2e+04 at 15  quantiles: [0 0 0 0.00018 39 4.1e+02 2e+04] 
+c*x: min -3.6e+04 = -22 * 1.7e+03 at 13  quantiles: [-3.6e+04 0 0 0 16 5.1e+02 3.2e+04] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/fit1d.mps.gz
+Reading problem data from 'netlib/zib/mps/fit1d.mps.gz'...
+Problem: FIT1D
+Objective: PENALTY
+25 rows, 1026 columns, 14430 non-zeros
+8523 records were read
+One free row was removed
+
+lp_to_gnulp: A (24, 1026), 13404 non0 
+
+{ gnulp_solve FIT1D simplex  24 rows, 1026 cols   
+Scaling...
+ A: min|aij| =  1.000e-02  max|aij| =  1.890e+03  ratio =  1.890e+05
+GM: min|aij| =  6.743e-02  max|aij| =  1.483e+01  ratio =  2.200e+02
+EQ: min|aij| =  4.546e-03  max|aij| =  1.000e+00  ratio =  2.200e+02
+obj: -9146.38  status: opt feas  FIT1D simplex  24 rows, 1026 cols   
+x: [0 1 0 1 0 1 0 1 0 0 ... 0 0 0 0 0 0 0 0 0 0]
+y: [-8.3 0 -2.7 0 0.011 4.3 38 0 -0.069 -5.9 ... -9.4 0 0 -6.3 0 0 0 0 0.47 -1.5]
+}
+
+time:  0.0  0.0 sec  glpk simplex FIT1D
+x: ||max 3 at 798  quantiles: [0 0 0 0 1 1 3] 
+c*x: min -2.2e+02 = -2.2e+02 * 1 at 749  quantiles: [-2.2e+02 -45 -15 0 0 0 28] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/fit1p.mps.gz
+Reading problem data from 'netlib/zib/mps/fit1p.mps.gz'...
+Problem: FIT1P
+Objective: PENALTY
+628 rows, 1677 columns, 10894 non-zeros
+7115 records were read
+One free row was removed
+
+lp_to_gnulp: A (627, 1677), 9868 non0 
+
+{ gnulp_solve FIT1P simplex  627 rows, 1677 cols   
+Scaling...
+ A: min|aij| =  1.000e-02  max|aij| =  1.890e+03  ratio =  1.890e+05
+GM: min|aij| =  6.743e-02  max|aij| =  1.483e+01  ratio =  2.200e+02
+EQ: min|aij| =  4.546e-03  max|aij| =  1.000e+00  ratio =  2.200e+02
+obj: 9146.38  status: opt feas  FIT1P simplex  627 rows, 1677 cols   
+x: [8.3 0 2.7 0 0.011 4.3 38 0 0.069 5.9 ... 1.2e+02 0 1.4e+02 0 1.6e+02 0 1.7e+02 0 2.1e+02 0]
+y: [1 1 1 1 0 1 1 0 0 0 ... 0 0 0 0 0 0 0 0 0 0]
+}
+
+time:  0.1  0.1 sec  glpk simplex FIT1P
+x: ||max 2.1e+02 at 1675  quantiles: [0 0 0 0 8.9 28 2.1e+02] 
+c*x: min 0 = 0 * 8.3 at 0  quantiles: [0 0 0 0 0 23 1.7e+02] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/fit2d.mps.gz
+Reading problem data from 'netlib/zib/mps/fit2d.mps.gz'...
+Problem: FIT2D
+Objective: PENALTY
+26 rows, 10500 columns, 138018 non-zeros
+82132 records were read
+One free row was removed
+
+lp_to_gnulp: A (25, 10500), 129018 non0 
+
+{ gnulp_solve FIT2D simplex  25 rows, 10500 cols   
+Scaling...
+ A: min|aij| =  5.000e-02  max|aij| =  2.564e+03  ratio =  5.128e+04
+GM: min|aij| =  4.719e-02  max|aij| =  2.119e+01  ratio =  4.490e+02
+EQ: min|aij| =  2.227e-03  max|aij| =  1.000e+00  ratio =  4.490e+02
+obj: -68464.3  status: opt feas  FIT2D simplex  25 rows, 10500 cols   
+x: [0 1 0 0 1 0.5 0 1 0 0 ... 1 0 0 0 0 0 0 0 0 1]
+y: [-8.5 -0.013 -4.7 0 0.89 0 -0.0031 0 0 1.3 ... -6.7 1.2 0 -4.9 1.1 -5.3 4.8 -4.7 2.6 -2.9]
+}
+
+time:  3.6  3.6 sec  glpk simplex FIT2D
+x: ||max 1 at 1  quantiles: [0 0 0 0 1 1 1] 
+c*x: min -1.6e+03 = -1.6e+03 * 1 at 1597  quantiles: [-1.6e+03 -40 0 0 0 5 9.5] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/fit2p.mps.gz
+Reading problem data from 'netlib/zib/mps/fit2p.mps.gz'...
+Problem: FIT2P
+Objective: PENALTY
+3001 rows, 13525 columns, 60784 non-zeros
+43154 records were read
+One free row was removed
+
+lp_to_gnulp: A (3000, 13525), 50284 non0 
+
+{ gnulp_solve FIT2P simplex  3000 rows, 13525 cols   
+Scaling...
+ A: min|aij| =  5.000e-02  max|aij| =  2.564e+03  ratio =  5.128e+04
+GM: min|aij| =  4.719e-02  max|aij| =  2.119e+01  ratio =  4.490e+02
+EQ: min|aij| =  2.227e-03  max|aij| =  1.000e+00  ratio =  4.490e+02
+obj: 68464.3  status: opt feas  FIT2P simplex  3000 rows, 13525 cols   
+x: [8.5 0.013 4.7 0 0.89 0 0.0031 0 0 1.3 ... 0 4.8 0 0 0 15 0 0 0 0]
+y: [1 1.5 1 1 1 1.5 1.5 1 1 1 ... -2 1 -2 -2 -2 1 -2 -2 0 1]
+}
+
+time:  5.3  5.3 sec  glpk simplex FIT2P
+x: ||max 8.5e+02 at 2153  quantiles: [0 0 0 0 5 17 8.5e+02] 
+c*x: min 0 = 0 * 8.5 at 0  quantiles: [0 0 0 0 4.5 19 1.3e+03] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/forplan.mps.gz
+Reading problem data from 'netlib/zib/mps/forplan.mps.gz'...
+Problem: FORPLAN
+Objective: OB1PNW20
+162 rows, 421 columns, 4916 non-zeros
+2751 records were read
+One free row was removed
+
+lp_to_gnulp: A (161, 421), 4563 non0 
+
+{ gnulp_solve FORPLAN simplex  161 rows, 421 cols   
+Scaling...
+ A: min|aij| =  7.390e-03  max|aij| =  2.800e+03  ratio =  3.789e+05
+GM: min|aij| =  2.909e-01  max|aij| =  3.437e+00  ratio =  1.181e+01
+EQ: min|aij| =  8.683e-02  max|aij| =  1.000e+00  ratio =  1.152e+01
+obj: -664.219  status: opt feas  FORPLAN simplex  161 rows, 421 cols   
+x: [0 2e+04 0 2.4e+04 0 2.4e+04 0 2.4e+04 0 2.4e+04 ... 0 0 -1.1e-14 0 0 1.1e+03 5.7e+02 0 1.8e+02 1.8e+02]
+y: [-3.6e-05 0 0 0 0 0 0 0 0 0 ... -0.0013 -0.0013 -0.001 0.05 -0.0013 -0.001 -0.15 -0.03 -0.023 -0.068]
+}
+
+time:  0.0  0.0 sec  glpk simplex FORPLAN
+x: ||max 2.4e+04 at 3  quantiles: [-6.7e-13 0 0 0 0 2e+02 2.4e+04] 
+c*x: min -9.8e+02 = -0.35 * 2.8e+03 at 77  quantiles: [-9.8e+02 0 0 0 0 0 73] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/ganges.mps.gz
+Reading problem data from 'netlib/zib/mps/ganges.mps.gz'...
+Problem: GANGES
+Objective: OBJ99
+1310 rows, 1681 columns, 7021 non-zeros
+5982 records were read
+One free row was removed
+
+lp_to_gnulp: A (1309, 1681), 6912 non0 
+
+{ gnulp_solve GANGES simplex  1309 rows, 1681 cols   
+Scaling...
+ A: min|aij| =  1.400e-03  max|aij| =  1.000e+00  ratio =  7.143e+02
+GM: min|aij| =  2.444e-01  max|aij| =  4.092e+00  ratio =  1.675e+01
+EQ: min|aij| =  5.972e-02  max|aij| =  1.000e+00  ratio =  1.675e+01
+obj: -109586  status: opt feas  GANGES simplex  1309 rows, 1681 cols   
+x: [1.9e+04 2e+04 1.7e+04 2.4e+04 5.1e+04 1.1e+05 1e+05 1e+05 9e+04 5.7e+04 ... 0 0 0 0 0 0 0 0 0 0]
+y: [0 0 0 0 0 0 0 0 0 0 ... -1.2e+03 -1.2e+03 -1.2e+03 -1.2e+03 -1.2e+03 -1.2e+03 -1.2e+03 -1.2e+03 -1.2e+03 -1.2e+03]
+}
+
+time:  0.1  0.1 sec  glpk simplex GANGES
+x: ||max 1.3e+05 at 31  quantiles: [0 0 0.012 2.8e+02 1.2e+03 6.3e+03 1.3e+05] 
+c*x: min -7.6e+03 = -0.5 * 1.5e+04 at 1062  quantiles: [-7.6e+03 0 0 0 0 0 0] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/gfrd-pnc.mps.gz
+Reading problem data from 'netlib/zib/mps/gfrd-pnc.mps.gz'...
+Problem: GFRD-PNC
+Objective: OBJ
+617 rows, 1092 columns, 3467 non-zeros
+3099 records were read
+One free row was removed
+
+lp_to_gnulp: A (616, 1092), 2377 non0 
+
+{ gnulp_solve GFRD-PNC simplex  616 rows, 1092 cols   
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.095e+03  ratio =  1.095e+03
+GM: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+EQ: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+obj: 6.90224e+06  status: opt feas  GFRD-PNC simplex  616 rows, 1092 cols   
+x: [1.5e+04 1.5e+04 1.5e+04 1.5e+04 1.9e+04 1.9e+04 3.7e+03 3.7e+03 3.3e+03 3.3e+03 ... 1 0 1 0 1 0 0 1 7e+04 7e+04]
+y: [-85 -4 -85 -4.3 -86 -4.6 -87 -4.9 -86 -4.3 ... -10 0 -2.3 -5.4 -3 -3.5 -1 -3.7 -5.6 -5.3]
+}
+
+time:  0.0  0.0 sec  glpk simplex GFRD-PNC
+x: ||max 7e+04 at 1090  quantiles: [-3.2e-11 0 0 0 1.1e+03 4.4e+03 7e+04] 
+c*x: min -1.7e-11 = 8.2e+04 * -2.1e-16 at 945  quantiles: [-1.7e-11 0 0 0 6.8e+02 9.7e+03 3.9e+05] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/greenbea.mps.gz
+Reading problem data from 'netlib/zib/mps/greenbea.mps.gz'...
+Problem: GREENBEA
+Objective: FAT0..J.
+2393 rows, 5405 columns, 31499 non-zeros
+19215 records were read
+One free row was removed
+
+lp_to_gnulp: A (2392, 5405), 30877 non0 
+
+{ gnulp_solve GREENBEA simplex  2392 rows, 5405 cols   
+Scaling...
+ A: min|aij| =  6.000e-05  max|aij| =  1.000e+02  ratio =  1.667e+06
+GM: min|aij| =  4.257e-02  max|aij| =  2.349e+01  ratio =  5.517e+02
+EQ: min|aij| =  1.813e-03  max|aij| =  1.000e+00  ratio =  5.517e+02
+obj: -7.25552e+07  status: opt feas  GREENBEA simplex  2392 rows, 5405 cols   
+x: [2.0e+02 1.8e+03 8.3e+05 2.3e+03 4e+02 5.7e+02 8.5e+02 2.6e+03 9.6e+02 4.3e+02 ... 0 0 0 0 0 0 9.9 0 0 0]
+y: [2.5e+02 2.4e+02 1e+02 1.5e+02 46 1.7e+02 41 7.2e+02 -1.5 2.9e+02 ... 0 0 0 0 -4e+03 0 0 0 -2e+04 2e+04]
+}
+
+time:  1.3  1.3 sec  glpk simplex GREENBEA
+x: ||max 3.3e+08 at 4180  quantiles: [-2 0 0 0 0 2e+02 3.3e+08] 
+c*x: min -8.3e+07 = -1e+02 * 8.3e+05 at 4070  quantiles: [-8.3e+07 0 0 0 0 0 1.3e+07] 
+lp_check: blo > Ax  0 > -4.43371e-08  at [1863] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/greenbeb.mps.gz
+Reading problem data from 'netlib/zib/mps/greenbeb.mps.gz'...
+Problem: GREENBEB
+Objective: FAT0..J.
+2393 rows, 5405 columns, 31499 non-zeros
+19219 records were read
+One free row was removed
+
+lp_to_gnulp: A (2392, 5405), 30877 non0 
+
+{ gnulp_solve GREENBEB simplex  2392 rows, 5405 cols   
+Scaling...
+ A: min|aij| =  6.000e-05  max|aij| =  1.000e+02  ratio =  1.667e+06
+GM: min|aij| =  4.257e-02  max|aij| =  2.349e+01  ratio =  5.517e+02
+EQ: min|aij| =  1.813e-03  max|aij| =  1.000e+00  ratio =  5.517e+02
+obj: -4.30226e+06  status: opt feas  GREENBEB simplex  2392 rows, 5405 cols   
+x: [2.8e+02 9.6e+02 0 1.1e+03 4e+02 6e+02 6.5e+02 1.8e+03 8.1e+02 4.0e+02 ... 0 0 0 0 0 0 1.6e+02 2.1 0 0]
+y: [0.12 0.56 -0.042 -0.044 0.91 -0.011 -0.069 77 0.097 0.059 ... -2.8e+02 0 0 0 0 0 0 0 7.9e+02 -7.9e+02]
+}
+
+time:  1.0  1.0 sec  glpk simplex GREENBEB
+x: ||max 1.9e+05 at 5230  quantiles: [-1e-10 0 0 0 0 1.1e+02 1.9e+05] 
+c*x: min -3.8e+05 = -1e+02 * 3.8e+03 at 4076  quantiles: [-3.8e+05 0 0 0 0 0 1.2e+04] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/grow15.mps.gz
+Reading problem data from 'netlib/zib/mps/grow15.mps.gz'...
+Problem: GROW15
+Objective: REVENUE
+301 rows, 645 columns, 5665 non-zeros
+3848 records were read
+One free row was removed
+
+lp_to_gnulp: A (300, 645), 5620 non0 
+
+{ gnulp_solve GROW15 simplex  300 rows, 645 cols   
+Scaling...
+ A: min|aij| =  6.000e-06  max|aij| =  1.000e+00  ratio =  1.667e+05
+GM: min|aij| =  8.123e-03  max|aij| =  1.231e+02  ratio =  1.515e+04
+EQ: min|aij| =  6.599e-05  max|aij| =  1.000e+00  ratio =  1.515e+04
+obj: -1.06871e+08  status: opt feas  GROW15 simplex  300 rows, 645 cols   
+x: [4.1e+05 3e+05 5.3e+05 8.5e+03 9.6e+04 1.1e+05 1.4e+04 3.1e+04 6.3e+04 3.4e+04 ... 0 0 0 0 0 0 0 0 0 0]
+y: [5.2 4 1.7 6.1 3.3 4.2 12 8.7 86 3.4 ... 0.65 0.95 0.98 1.1 0.24 0.2 0.28 0.64 0.13 0.22]
+}
+
+time:  0.0  0.0 sec  glpk simplex GROW15
+x: ||max 1.6e+06 at 217  quantiles: [0 0 0 4.4e+03 3.3e+04 3e+05 1.6e+06] 
+c*x: min -7e+06 = -7 * 1e+06 at 151  quantiles: [-7e+06 0 0 0 0 0 0] 
+lp_check: Ax > b  1.16015e-07 > 0  at [238] 
+lp_check: blo > Ax  0 > -2.04698e-07  at [198] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/grow22.mps.gz
+Reading problem data from 'netlib/zib/mps/grow22.mps.gz'...
+Problem: GROW22
+Objective: REVENUE
+441 rows, 946 columns, 8318 non-zeros
+5640 records were read
+One free row was removed
+
+lp_to_gnulp: A (440, 946), 8252 non0 
+
+{ gnulp_solve GROW22 simplex  440 rows, 946 cols   
+Scaling...
+ A: min|aij| =  6.000e-06  max|aij| =  1.000e+00  ratio =  1.667e+05
+GM: min|aij| =  8.123e-03  max|aij| =  1.231e+02  ratio =  1.515e+04
+EQ: min|aij| =  6.599e-05  max|aij| =  1.000e+00  ratio =  1.515e+04
+obj: -1.60834e+08  status: opt feas  GROW22 simplex  440 rows, 946 cols   
+x: [3.4e+05 3e+05 5.3e+05 9.1e+03 1.2e+05 1.1e+05 1.4e+04 3.1e+04 6.3e+04 2.3e+04 ... 0 0 0 0 0 0 0 0 0 0]
+y: [5.2 4 1.7 6.1 3.3 4.2 12 8.7 86 3.4 ... 3.3 4.9 5.1 5.6 1.2 1.1 1.4 1.1 0.66 1.1]
+}
+
+time:  0.1  0.1 sec  glpk simplex GROW22
+x: ||max 1.6e+06 at 733  quantiles: [-1.4e-13 0 0 5.5e+03 3.3e+04 3.5e+05 1.6e+06] 
+c*x: min -7e+06 = -7 * 1e+06 at 151  quantiles: [-7e+06 0 0 0 0 0 0] 
+lp_check: Ax > b  4.04298e-08 > 0  at [318] 
+lp_check: blo > Ax  0 > -1.09821e-08  at [378] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/grow7.mps.gz
+Reading problem data from 'netlib/zib/mps/grow7.mps.gz'...
+Problem: GROW7
+Objective: REVENUE
+141 rows, 301 columns, 2633 non-zeros
+1800 records were read
+One free row was removed
+
+lp_to_gnulp: A (140, 301), 2612 non0 
+
+{ gnulp_solve GROW7 simplex  140 rows, 301 cols   
+Scaling...
+ A: min|aij| =  6.000e-06  max|aij| =  1.000e+00  ratio =  1.667e+05
+GM: min|aij| =  8.123e-03  max|aij| =  1.231e+02  ratio =  1.515e+04
+EQ: min|aij| =  6.599e-05  max|aij| =  1.000e+00  ratio =  1.515e+04
+obj: -4.77878e+07  status: opt feas  GROW7 simplex  140 rows, 301 cols   
+x: [6.1e+05 4.5e+03 5.3e+05 7.7e+03 9.9e+04 1.1e+05 3.7e+04 2e+04 6.3e+04 3.4e+04 ... 0 0 0 0 0 0 0 0 0 0]
+y: [5.2 4 1.7 6.1 3.3 4.2 12 8.7 86 3.4 ... 0.66 0.96 0.99 1.1 0.24 0.21 0.28 1.1 0.13 0.22]
+}
+
+time:  0.0  0.0 sec  glpk simplex GROW7
+x: ||max 1.1e+06 at 215  quantiles: [0 0 0 2.7e+03 3.3e+04 3.8e+05 1.1e+06] 
+c*x: min -7e+06 = -7 * 1e+06 at 151  quantiles: [-7e+06 0 0 0 0 0 0] 
+lp_check: Ax > b  2.41929e-06 > 0  at [2] 
+lp_check: blo > Ax  0 > -2.5034e-06  at [42] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/israel.mps.gz
+Reading problem data from 'netlib/zib/mps/israel.mps.gz'...
+Problem: ISRAEL
+Objective: COST
+175 rows, 142 columns, 2358 non-zeros
+1490 records were read
+One free row was removed
+
+lp_to_gnulp: A (174, 142), 2269 non0 
+
+{ gnulp_solve ISRAEL simplex  174 rows, 142 cols   
+Scaling...
+ A: min|aij| =  1.000e-03  max|aij| =  1.600e+03  ratio =  1.600e+06
+GM: min|aij| =  4.841e-02  max|aij| =  2.065e+01  ratio =  4.266e+02
+EQ: min|aij| =  2.375e-03  max|aij| =  1.000e+00  ratio =  4.211e+02
+obj: -896645  status: opt feas  ISRAEL simplex  174 rows, 142 cols   
+x: [2.3e+02 1.7e+02 1.7e+02 0 0 0 0 76 0 0 ... 18 18 18 18 0 2.7e+03 0 0 0 0]
+y: [-27 0 0 0 0 -27 -14 -23 -16 0 ... 0 0 0 0 0 -0.29 -0.27 -0.27 -0.28 0]
+}
+
+time:  0.0  0.0 sec  glpk simplex ISRAEL
+x: ||max 1e+04 at 71  quantiles: [0 0 0 0 1.4e+02 1.3e+03 1e+04] 
+c*x: min -2.9e+05 = -1.2e+03 * 2.3e+02 at 0  quantiles: [-2.9e+05 -5.9e+03 0 0 0 2.1e+03 1.2e+04] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/kb2.mps.gz
+Reading problem data from 'netlib/zib/mps/kb2.mps.gz'...
+Problem: KB2
+Objective: FAT7..J.
+44 rows, 41 columns, 291 non-zeros
+219 records were read
+One free row was removed
+
+lp_to_gnulp: A (43, 41), 286 non0 
+
+{ gnulp_solve KB2 simplex  43 rows, 41 cols   
+Scaling...
+ A: min|aij| =  1.700e-01  max|aij| =  1.130e+02  ratio =  6.647e+02
+GM: min|aij| =  1.458e-01  max|aij| =  6.857e+00  ratio =  4.702e+01
+EQ: min|aij| =  2.127e-02  max|aij| =  1.000e+00  ratio =  4.702e+01
+obj: -1749.9  status: opt feas  KB2 simplex  43 rows, 41 cols   
+x: [0.81 0 0 0 4.7 25 5 0 0 9.6 ... 36 21 50 66 3.2e+03 3.6e+03 1.8e+03 2e+03 5.7e+03 6.3e+03]
+y: [17 17 17 17 12 17 17 17 16 16 ... 0 -0.079 0 0 -0.078 0 0 0 -0.079 0]
+}
+
+time:  0.0  0.0 sec  glpk simplex KB2
+x: ||max 6.3e+03 at 40  quantiles: [0 0 2.5 12 36 2e+03 6.3e+03] 
+c*x: min -2e+03 = -16 * 1.2e+02 at 21  quantiles: [-2e+03 0 0 0 0 0 1.9e+02] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/lotfi.mps.gz
+Reading problem data from 'netlib/zib/mps/lotfi.mps.gz'...
+Problem: LOTFI
+Objective: 1
+154 rows, 308 columns, 1086 non-zeros
+786 records were read
+One free row was removed
+
+lp_to_gnulp: A (153, 308), 1078 non0 
+
+{ gnulp_solve LOTFI simplex  153 rows, 308 cols   
+Scaling...
+ A: min|aij| =  1.920e-02  max|aij| =  1.000e+03  ratio =  5.208e+04
+GM: min|aij| =  3.044e-01  max|aij| =  3.285e+00  ratio =  1.079e+01
+EQ: min|aij| =  1.023e-01  max|aij| =  1.000e+00  ratio =  9.771e+00
+obj: -25.2647  status: opt feas  LOTFI simplex  153 rows, 308 cols   
+x: [32 0 6.3 0 0 0 0 0 1.3e+02 0 ... 5.9e+03 2.5e+03 2e+02 0 6.3 0 0 0 0 0]
+y: [-0.0024 -0.0019 -0.00066 -0.00026 -0.00018 -4.2e-05 -0.0014 -0.0009 0.00034 0.00074 ... 0.001 1 1 1 -0.1 -0.1 0.001 1 0.00026 0.026]
+}
+
+time:  0.0  0.0 sec  glpk simplex LOTFI
+x: ||max 1.4e+04 at 91  quantiles: [0 0 0 0 14 1.2e+03 1.4e+04] 
+c*x: min -32 = -1 * 32 at 0  quantiles: [-32 0 0 0 0 0 6.3] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/maros-r7.mps.gz
+Reading problem data from 'netlib/zib/mps/maros-r7.mps.gz'...
+Problem: MAROS-R7
+Objective: R0
+3137 rows, 9408 columns, 151120 non-zeros
+80307 records were read
+One free row was removed
+
+lp_to_gnulp: A (3136, 9408), 144848 non0 
+
+{ gnulp_solve MAROS-R7 simplex  3136 rows, 9408 cols   
+Scaling...
+ A: min|aij| =  1.672e-03  max|aij| =  1.000e+00  ratio =  5.981e+02
+GM: min|aij| =  4.089e-02  max|aij| =  2.446e+01  ratio =  5.981e+02
+EQ: min|aij| =  1.672e-03  max|aij| =  1.000e+00  ratio =  5.981e+02
+obj: 1.49719e+06  status: opt feas  MAROS-R7 simplex  3136 rows, 9408 cols   
+x: [0 1.1e+03 0 0 0 3.8e+02 4.9e+02 0 3.3e+02 0 ... 0 0 0 0 7.6e+02 0 0 0 0 0]
+y: [-1 0.69 -1 -1 -1 0.57 0.087 -1 0.66 -1 ... -1 0.89 -1 -1 1 0.76 -1 -1 -1 -1]
+}
+
+time:  2.1  2.1 sec  glpk simplex MAROS-R7
+x: ||max 1.4e+04 at 1708  quantiles: [0 0 0 0 3.3e+02 1.2e+03 1.4e+04] 
+c*x: min 0 = 0 * 0 at 0  quantiles: [0 0 0 0 0 6.3e+02 4.4e+03] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/maros.mps.gz
+Reading problem data from 'netlib/zib/mps/maros.mps.gz'...
+Problem: MAROS
+Objective: REVENUE1
+847 rows, 1443 columns, 10006 non-zeros
+6250 records were read
+One free row was removed
+
+lp_to_gnulp: A (846, 1443), 9614 non0 
+
+{ gnulp_solve MAROS simplex  846 rows, 1443 cols   
+Scaling...
+ A: min|aij| =  1.000e-04  max|aij| =  1.684e+04  ratio =  1.684e+08
+GM: min|aij| =  2.698e-02  max|aij| =  3.707e+01  ratio =  1.374e+03
+EQ: min|aij| =  7.576e-04  max|aij| =  1.000e+00  ratio =  1.320e+03
+obj: -58063.7  status: opt feas  MAROS simplex  846 rows, 1443 cols   
+x: [6.1e+03 1.6e+03 1.2e+02 0 17 0 1.4e+02 3.6e+02 0 0 ... 1.2e+03 0 0 6.2e+02 2.4e+03 3.3e+03 39 2.3e+02 1.9e+02 1.8e+02]
+y: [-7.5 -9.2 -7.1 -7.2 0 -4.5 -4.5 -16 -13 -11 ... 1.4 11 11 0 0 0 1.8 1.6 -1.5 12]
+}
+
+time:  0.1  0.1 sec  glpk simplex MAROS
+x: ||max 1.9e+05 at 183  quantiles: [-2.6e-11 0 0 0 0.19 1.4e+02 1.9e+05] 
+c*x: min -1.4e+04 = -29 * 4.7e+02 at 972  quantiles: [-1.4e+04 -0 0 0 0 0 3.2e+04] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/modszk1.mps.gz
+Reading problem data from 'netlib/zib/mps/modszk1.mps.gz'...
+Problem: MODSZK1
+Objective: OBJ.FUNC
+688 rows, 1620 columns, 4158 non-zeros
+2973 records were read
+One free row was removed
+
+lp_to_gnulp: A (687, 1620), 3168 non0 
+
+{ gnulp_solve MODSZK1 simplex  687 rows, 1620 cols   
+Scaling...
+ A: min|aij| =  7.400e-04  max|aij| =  1.190e+00  ratio =  1.608e+03
+GM: min|aij| =  1.649e-01  max|aij| =  6.063e+00  ratio =  3.676e+01
+EQ: min|aij| =  2.720e-02  max|aij| =  1.000e+00  ratio =  3.676e+01
+obj: 109301  status: opt feas  MODSZK1 simplex  687 rows, 1620 cols   
+x: [0 0 0 0 0 2.8e+02 0 0 0 0 ... 0 4.8e+04 0 0 1.3e+05 1.7e+05 1.3e+05 0 1.7e+05 0]
+y: [1 0.17 -0.68 0.44 -0.35 -0.34 1.2 -0.46 -0.98 1.6 ... 5.6 -1 -0.22 0.77 0.86 -0.39 1.1 0 3 2.2]
+}
+
+time:  0.0  0.0 sec  glpk simplex MODSZK1
+x: ||max 6.9e+05 at 1343  quantiles: [-5.1e-13 0 0 0 1.1e+03 1.1e+04 6.9e+05] 
+c*x: min -4.1e-12 = 8 * -5.1e-13 at 1196  quantiles: [-4.1e-12 0 0 0 0 0 5.3e+04] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/nesm.mps.gz
+Reading problem data from 'netlib/zib/mps/nesm.mps.gz'...
+Problem: NESM
+Objective: SHORTAGE
+663 rows, 2923 columns, 13988 non-zeros
+12673 records were read
+One free row was removed
+
+lp_to_gnulp: A (662, 2923), 13288 non0 
+
+{ gnulp_solve NESM simplex  662 rows, 2923 cols   
+Scaling...
+ A: min|aij| =  1.000e-03  max|aij| =  3.333e+01  ratio =  3.333e+04
+GM: min|aij| =  1.486e-01  max|aij| =  6.730e+00  ratio =  4.529e+01
+EQ: min|aij| =  2.208e-02  max|aij| =  1.000e+00  ratio =  4.529e+01
+obj: 1.4076e+07  status: opt feas  NESM simplex  662 rows, 2923 cols   
+x: [1.3e+03 1.5e+03 1.5e+03 9.6e+02 1.5e+03 9.9e+02 1.3e+03 1.3e+03 0 0 ... 1 1 1.3 1.3 1.3 1.3 1.3 1.3 1.3 1.3]
+y: [-0.0061 -0.0064 -0.0065 -0.0063 -0.02 -0.0072 -0.0047 -0.0044 1.4e+03 1.4e+03 ... 0 0 -1.2 0 0 0 0 -6.5e-19 -6.5e-19 0]
+}
+
+time:  0.2  0.2 sec  glpk simplex NESM
+x: ||max 5.7e+03 at 747  quantiles: [-39 0 0 0 22 1.1e+02 5.7e+03] 
+c*x: min 0 = 0.19 * 0 at 8  quantiles: [0 0 0 0 0 0 1e+06] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/perold.mps.gz
+Reading problem data from 'netlib/zib/mps/perold.mps.gz'...
+Problem: PEROLD
+Objective: OBJ
+626 rows, 1376 columns, 6026 non-zeros
+4481 records were read
+One free row was removed
+
+lp_to_gnulp: A (625, 1376), 6018 non0 
+
+{ gnulp_solve PEROLD simplex  625 rows, 1376 cols   
+Scaling...
+ A: min|aij| =  5.300e-05  max|aij| =  2.361e+04  ratio =  4.456e+08
+GM: min|aij| =  3.247e-02  max|aij| =  3.080e+01  ratio =  9.485e+02
+EQ: min|aij| =  1.066e-03  max|aij| =  1.000e+00  ratio =  9.378e+02
+obj: -9380.76  status: opt feas  PEROLD simplex  625 rows, 1376 cols   
+x: [0.14 0 2.4 0 0 12 0 0 5.4e+02 51 ... 0 0 0 0 1.4e+02 0 0 0 2.4e+02 0]
+y: [0.24 0.3 1.6 0.22 5.5 0.0056 0.026 0.8 0.23 2.1e+02 ... 0.00089 0.00089 0.00089 -5.9e-05 0 -10 0.92 0 0.34 0.92]
+}
+
+time:  0.1  0.1 sec  glpk simplex PEROLD
+x: ||max 1.1e+05 at 1302  quantiles: [-2.3e-15 0 0 0 20 4e+02 1.1e+05] 
+c*x: min -1.9e+03 = -1 * 1.9e+03 at 1297  quantiles: [-1.9e+03 0 0 0 0 0 0] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/pilot-ja.mps.gz
+Reading problem data from 'netlib/zib/mps/pilot-ja.mps.gz'...
+Problem: PILOT.JA
+Objective: OBJ
+941 rows, 1988 columns, 14706 non-zeros
+9674 records were read
+One free row was removed
+
+lp_to_gnulp: A (940, 1988), 14698 non0 
+
+{ gnulp_solve PILOT.JA simplex  940 rows, 1988 cols   
+Scaling...
+ A: min|aij| =  2.000e-06  max|aij| =  5.851e+06  ratio =  2.926e+12
+GM: min|aij| =  2.292e-02  max|aij| =  4.364e+01  ratio =  1.904e+03
+EQ: min|aij| =  5.347e-04  max|aij| =  1.000e+00  ratio =  1.870e+03
+obj: -6113.14  status: opt feas  PILOT.JA simplex  940 rows, 1988 cols   
+x: [0.17 0 4.7 0 0 13 0 0 0 0 ... 0 0 0.91 0 0 0 0 3.5 0 0]
+y: [0.001 0.0011 0.0043 0.0013 0.017 0.027 0.032 0.16 0.13 0 ... 0 0 1 1.9 2.4 3.1 18 1.2 -1.4 0]
+}
+
+time:  0.3  0.3 sec  glpk simplex PILOT.JA
+x: ||max 1.5e+05 at 1851  quantiles: [-3.1e-15 0 0 0 3.7 2e+02 1.5e+05] 
+c*x: min -2.4e+03 = -1.3 * 1.8e+03 at 1846  quantiles: [-2.4e+03 0 0 0 0 0 0] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/pilot-we.mps.gz
+Reading problem data from 'netlib/zib/mps/pilot-we.mps.gz'...
+Problem: PILOT.WE
+Objective: OBJ
+723 rows, 2789 columns, 9218 non-zeros
+6847 records were read
+One free row was removed
+
+lp_to_gnulp: A (722, 2789), 9126 non0 
+
+{ gnulp_solve PILOT.WE simplex  722 rows, 2789 cols   
+Scaling...
+ A: min|aij| =  1.430e-04  max|aij| =  4.795e+04  ratio =  3.353e+08
+GM: min|aij| =  4.911e-02  max|aij| =  2.036e+01  ratio =  4.146e+02
+EQ: min|aij| =  2.412e-03  max|aij| =  1.000e+00  ratio =  4.146e+02
+obj: -2.72011e+06  status: opt feas  PILOT.WE simplex  722 rows, 2789 cols   
+x: [58 76 0 0 0 0 1.1e+02 0 0 0 ... 0 0 0 0 0 0 0 22 0 0]
+y: [4.6e+02 4.6e+02 5.8e+02 1.5e+02 7.9e+03 9.6 12 96 56 3.4e+02 ... 1.3e+02 0 0 2.8 52 15 17 2.6 1.5e+02 17]
+}
+
+time:  0.2  0.2 sec  glpk simplex PILOT.WE
+x: ||max 1.4e+05 at 2014  quantiles: [0 0 0 0 0.14 1.6e+02 1.4e+05] 
+c*x: min -5.7e+05 = -1.4e+05 * 4.2 at 632  quantiles: [-5.7e+05 0 0 0 0 0 5.8e+02] 
+lp_check: blo > Ax  0 > -2.83435e-08  at [239] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/pilot.mps.gz
+Reading problem data from 'netlib/zib/mps/pilot.mps.gz'...
+Problem: PILOT
+Objective: ENDCAP
+1442 rows, 3652 columns, 43220 non-zeros
+25106 records were read
+One free row was removed
+
+lp_to_gnulp: A (1441, 3652), 43167 non0 
+
+{ gnulp_solve PILOT simplex  1441 rows, 3652 cols   
+Scaling...
+ A: min|aij| =  1.000e-06  max|aij| =  1.456e+02  ratio =  1.456e+08
+GM: min|aij| =  2.574e-02  max|aij| =  3.886e+01  ratio =  1.510e+03
+EQ: min|aij| =  6.727e-04  max|aij| =  1.000e+00  ratio =  1.487e+03
+obj: -557.49  status: opt feas  PILOT simplex  1441 rows, 3652 cols   
+x: [8.5e+02 4.7e+02 1.3e+03 1e+03 7.2e+02 8.7e+02 5.3e+02 1.5e+03 1.2e+03 8.4e+02 ... 0 0 0 0 0 0 0 0 0 0]
+y: [-0.11 -0.13 -0.02 -0.16 -0.14 -0.21 -0.13 -0.14 -0.12 -0.16 ... 1.1e-08 0 0 0 -3.1e-05 -2.3e-05 0 0 0 0]
+}
+
+time:  2.5  2.5 sec  glpk simplex PILOT
+x: ||max 4.1e+03 at 39  quantiles: [0 0 0 0.2 14 1.6e+02 4.1e+03] 
+c*x: min -28 = -0.022 * 1.3e+03 at 2  quantiles: [-28 0 0 0 0 0 0] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/pilot4.mps.gz
+Reading problem data from 'netlib/zib/mps/pilot4.mps.gz'...
+Problem: PILOT4
+Objective: OBJ
+411 rows, 1000 columns, 5145 non-zeros
+3640 records were read
+One free row was removed
+
+lp_to_gnulp: A (410, 1000), 5141 non0 
+
+{ gnulp_solve PILOT4 simplex  410 rows, 1000 cols   
+Scaling...
+ A: min|aij| =  3.700e-05  max|aij| =  2.784e+04  ratio =  7.525e+08
+GM: min|aij| =  1.372e-02  max|aij| =  7.290e+01  ratio =  5.314e+03
+EQ: min|aij| =  1.984e-04  max|aij| =  1.000e+00  ratio =  5.040e+03
+obj: -2581.14  status: opt feas  PILOT4 simplex  410 rows, 1000 cols   
+x: [0.12 0 4.7 0 0 13 0 0 5.3e+02 81 ... 2.7 2.6 22 9.6 26 25 50 16 14 1.1e+02]
+y: [-0.65 0 0 0.16 0.0057 0.0089 0.0026 0.16 0.016 0.021 ... 0.0017 0.0021 0.0071 0.0055 0.00066 0.008 0.0011 0 0 0]
+}
+
+time:  0.1  0.1 sec  glpk simplex PILOT4
+x: ||max 9.6e+04 at 871  quantiles: [-3.8e-13 0 0 0 24 4.5e+02 9.6e+04] 
+c*x: min -9.3e+02 = -1 * 9.2e+02 at 866  quantiles: [-9.3e+02 0 0 0 0 0 0] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/pilot87.mps.gz
+Reading problem data from 'netlib/zib/mps/pilot87.mps.gz'...
+Problem: PILOT87
+Objective: EENDCAP
+2031 rows, 4883 columns, 73804 non-zeros
+41990 records were read
+One free row was removed
+
+lp_to_gnulp: A (2030, 4883), 73152 non0 
+
+{ gnulp_solve PILOT87 simplex  2030 rows, 4883 cols   
+Scaling...
+ A: min|aij| =  1.000e-06  max|aij| =  1.000e+03  ratio =  1.000e+09
+GM: min|aij| =  6.260e-03  max|aij| =  1.597e+02  ratio =  2.552e+04
+EQ: min|aij| =  3.919e-05  max|aij| =  1.000e+00  ratio =  2.552e+04
+obj: 301.71  status: opt feas  PILOT87 simplex  2030 rows, 4883 cols   
+x: [8.7 10 10 11 11 8.8 9.1 9 6 6.9 ... 0 0 0 3 1 9 2.5 1.4 2.4 0]
+y: [10 10 9 8.7 9.1 8.7 11 11 -0.027 -0.021 ... -0.0032 -0.0022 -0.0055 -0.0045 -0.0045 -0.0037 -0.0041 -0.0045 -0.0015 -0.0011]
+}
+
+time:  6.3  6.3 sec  glpk simplex PILOT87
+x: ||max 2.4e+04 at 2243  quantiles: [-1.5e+02 0 0 0.85 18 99 2.4e+04] 
+c*x: min -0.53 = -0.0027 * 1.9e+02 at 2291  quantiles: [-0.53 0 0 0 0 0 33] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/pilotnov.mps.gz
+Reading problem data from 'netlib/zib/mps/pilotnov.mps.gz'...
+Problem: PILOTNOV
+Objective: OBJ
+976 rows, 2172 columns, 13129 non-zeros
+8836 records were read
+One free row was removed
+
+lp_to_gnulp: A (975, 2172), 13057 non0 
+
+{ gnulp_solve PILOTNOV simplex  975 rows, 2172 cols   
+Scaling...
+ A: min|aij| =  2.000e-06  max|aij| =  5.851e+06  ratio =  2.926e+12
+GM: min|aij| =  1.967e-02  max|aij| =  5.085e+01  ratio =  2.586e+03
+EQ: min|aij| =  4.027e-04  max|aij| =  1.000e+00  ratio =  2.483e+03
+obj: -4497.28  status: opt feas  PILOTNOV simplex  975 rows, 2172 cols   
+x: [0.17 0 2.9 0 1.2 13 0 0 0 0 ... 0 2e+03 0 0 0 0 0 0 0 2.8e+02]
+y: [-5e-16 -4.1e-16 -1.1e-15 -4.5e-16 -7.8e-15 -1.9e-14 -2.2e-14 -1e-13 -8.9e-14 0 ... -7.5e-12 -4.5e-13 -8.5e-13 -1e-15 -1.3e-15 -5.4e-17
+ 0.89 0.89 0 -8.6e-13]
+}
+
+time:  0.2  0.2 sec  glpk simplex PILOTNOV
+x: ||max 3.5e+04 at 877  quantiles: [0 0 0 0 1.4 1e+02 3.5e+04] 
+c*x: min -1.8e+03 = -0.89 * 2e+03 at 2163  quantiles: [-1.8e+03 0 0 0 0 0 0] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/recipe.mps.gz
+Reading problem data from 'netlib/zib/mps/recipe.mps.gz'...
+Problem: RECIPE
+Objective: FAT...J.
+92 rows, 180 columns, 752 non-zeros
+639 records were read
+One free row was removed
+
+lp_to_gnulp: A (91, 180), 663 non0 
+
+{ gnulp_solve RECIPE simplex  91 rows, 180 cols   
+Scaling...
+ A: min|aij| =  1.200e-01  max|aij| =  1.450e+02  ratio =  1.208e+03
+GM: min|aij| =  2.417e-01  max|aij| =  4.137e+00  ratio =  1.711e+01
+EQ: min|aij| =  5.843e-02  max|aij| =  1.000e+00  ratio =  1.711e+01
+obj: -266.616  status: opt feas  RECIPE simplex  91 rows, 180 cols   
+x: [0 0 0 0 0 0 0 0 0 0 ... 0 0 0 0 0 0 0 0 0 0]
+y: [0 0 0 0 0 0 0 0 0 0 ... -2 -2 -2 -2 0 -0.1 0 -2 -0.006 -2]
+}
+
+time:  0.0  0.0 sec  glpk simplex RECIPE
+x: ||max 20 at 46  quantiles: [0 0 0 0 0 20 20] 
+c*x: min -40 = -2 * 20 at 46  quantiles: [-40 -0.04 0 0 0 0 2] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/sc105.mps.gz
+Reading problem data from 'netlib/zib/mps/sc105.mps.gz'...
+Problem: SC105
+Objective: MAXIM
+106 rows, 103 columns, 281 non-zeros
+296 records were read
+One free row was removed
+
+lp_to_gnulp: A (105, 103), 280 non0 
+
+{ gnulp_solve SC105 simplex  105 rows, 103 cols   
+Scaling...
+ A: min|aij| =  1.000e-01  max|aij| =  2.000e+00  ratio =  2.000e+01
+Problem data seem to be well scaled
+obj: -52.2021  status: opt feas  SC105 simplex  105 rows, 103 cols   
+x: [0 11 52 52 52 0 11 52 0 11 ... 64 1.6e+02 7.1e+02 64 1.6e+02 7.1e+02 26 26 1.2e+02 1.2e+02]
+y: [0 -0.16 0 -0.25 -0.014 -0.33 -0.25 0 -0.11 -0.082 ... -0.01 -0.014 -0.012 -0.01 -0.014 -0.012 -0.052 -0.05 -0.054 -0.052]
+}
+
+time:  0.0  0.0 sec  glpk simplex SC105
+x: ||max 7.1e+02 at 92  quantiles: [0 0 18 63 1.2e+02 4e+02 7.1e+02] 
+c*x: min -52 = -1 * 52 at 3  quantiles: [-52 0 0 0 0 0 0] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/sc205.mps.gz
+Reading problem data from 'netlib/zib/mps/sc205.mps.gz'...
+Problem: SC205
+Objective: MAXIM
+206 rows, 203 columns, 552 non-zeros
+577 records were read
+One free row was removed
+
+lp_to_gnulp: A (205, 203), 551 non0 
+
+{ gnulp_solve SC205 simplex  205 rows, 203 cols   
+Scaling...
+ A: min|aij| =  1.000e-01  max|aij| =  2.000e+00  ratio =  2.000e+01
+Problem data seem to be well scaled
+obj: -52.2021  status: opt feas  SC205 simplex  205 rows, 203 cols   
+x: [0 11 52 52 52 0 11 52 0 11 ... 4.2e+02 5.2e+02 2.4e+03 4.2e+02 5.2e+02 2.4e+03 62 62 2.9e+02 2.9e+02]
+y: [0 -0.16 0 -0.25 -0.014 -0.33 -0.25 0 -0.11 -0.082 ... -0.00091 -0.00092 -0.00091 -0.00091 -0.00092 -0.00091 -0.0039 -0.0039 -0.0039
+ -0.0039]
+}
+
+time:  0.0  0.0 sec  glpk simplex SC205
+x: ||max 2.4e+03 at 192  quantiles: [-5.6e-16 11 41 1.4e+02 3.5e+02 1.1e+03 2.4e+03] 
+c*x: min -52 = -1 * 52 at 3  quantiles: [-52 0 0 0 0 0 0] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/sc50a.mps.gz
+Reading problem data from 'netlib/zib/mps/sc50a.mps.gz'...
+Problem: SC50A
+Objective: MAXIM
+51 rows, 48 columns, 131 non-zeros
+141 records were read
+One free row was removed
+
+lp_to_gnulp: A (50, 48), 130 non0 
+
+{ gnulp_solve SC50A simplex  50 rows, 48 cols   
+Scaling...
+ A: min|aij| =  1.000e-01  max|aij| =  2.000e+00  ratio =  2.000e+01
+Problem data seem to be well scaled
+obj: -64.5751  status: opt feas  SC50A simplex  50 rows, 48 cols   
+x: [0 17 65 65 65 0 17 65 0 17 ... 33 73 3e+02 33 73 3e+02 20 20 95 95]
+y: [0 -0.14 0 -0.21 -0.062 -0.28 -0.21 0 -0.092 -0.069 ... -0.054 -0.085 -0.069 -0.054 -0.085 -0.069 -0.3 -0.28 -0.31 -0.3]
+}
+
+time:  0.0  0.0 sec  glpk simplex SC50A
+x: ||max 3e+02 at 37  quantiles: [0 0 17 59 86 2.1e+02 3e+02] 
+c*x: min -65 = -1 * 65 at 3  quantiles: [-65 0 0 0 0 0 0] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/sc50b.mps.gz
+Reading problem data from 'netlib/zib/mps/sc50b.mps.gz'...
+Problem: SC50B
+Objective: MAXIM
+51 rows, 48 columns, 119 non-zeros
+127 records were read
+One free row was removed
+
+lp_to_gnulp: A (50, 48), 118 non0 
+
+{ gnulp_solve SC50B simplex  50 rows, 48 cols   
+Scaling...
+ A: min|aij| =  3.000e-01  max|aij| =  3.000e+00  ratio =  1.000e+01
+Problem data seem to be well scaled
+obj: -70  status: opt feas  SC50B simplex  50 rows, 48 cols   
+x: [30 28 42 70 70 30 28 42 30 28 ... 1.4e+02 1.3e+02 1.9e+02 1.4e+02 1.3e+02 1.9e+02 44 41 61 1e+02]
+y: [-0.058 0 0 -0.18 -0.17 -0.18 -0.17 -0.044 -0.044 -0.044 ... -0.074 -0.074 -0.074 -0.074 -0.074 -0.074 -0.32 -0.32 -0.32 -0.32]
+}
+
+time:  0.0  0.0 sec  glpk simplex SC50B
+x: ||max 3.2e+02 at 37  quantiles: [28 30 41 63 1e+02 1.4e+02 3.2e+02] 
+c*x: min -70 = -1 * 70 at 3  quantiles: [-70 0 0 0 0 0 0] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/scagr25.mps.gz
+Reading problem data from 'netlib/zib/mps/scagr25.mps.gz'...
+Problem: SCAGR25
+Objective: FOB00001
+472 rows, 500 columns, 2029 non-zeros
+1632 records were read
+One free row was removed
+
+lp_to_gnulp: A (471, 500), 1554 non0 
+
+{ gnulp_solve SCAGR25 simplex  471 rows, 500 cols   
+Scaling...
+ A: min|aij| =  2.000e-01  max|aij| =  9.320e+00  ratio =  4.660e+01
+Problem data seem to be well scaled
+obj: -1.47534e+07  status: opt feas  SCAGR25 simplex  471 rows, 500 cols   
+x: [0 1.6e+02 1.6e+02 0 1.6e+02 1.6e+02 1.3e+03 2.5e+03 1.4e+03 1.7e+03 ... 2.3e+04 2.1e+03 0 1.1e+03 0 0 2.5e+03 0 0 0]
+y: [-5.3e+03 -49 5.4e+03 1.2e+02 13 0 -9.2 0 0 5.5e+03 ... -1.1e+02 0 0.26 5e+02 3.3e+02 6.6e+02 5.7e+02 94 22 0]
+}
+
+time:  0.0  0.0 sec  glpk simplex SCAGR25
+x: ||max 2.3e+04 at 490  quantiles: [0 0 0 4.4e+02 1.2e+03 2.5e+03 2.3e+04] 
+c*x: min -1.6e+06 = -6.6e+02 * 2.5e+03 at 496  quantiles: [-1.6e+06 -1e+04 0 0 8.2e+03 2.9e+04 3.4e+05] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/scagr7.mps.gz
+Reading problem data from 'netlib/zib/mps/scagr7.mps.gz'...
+Problem: SCAGR7
+Objective: FOB00001
+130 rows, 140 columns, 553 non-zeros
+453 records were read
+One free row was removed
+
+lp_to_gnulp: A (129, 140), 420 non0 
+
+{ gnulp_solve SCAGR7 simplex  129 rows, 140 cols   
+Scaling...
+ A: min|aij| =  2.000e-01  max|aij| =  9.320e+00  ratio =  4.660e+01
+Problem data seem to be well scaled
+obj: -2.33139e+06  status: opt feas  SCAGR7 simplex  129 rows, 140 cols   
+x: [0 1.6e+02 1.6e+02 0 1.6e+02 1.6e+02 0 2.5e+03 1.4e+03 1.4e+03 ... 4.6e+03 0 0 3.6e+02 0 3.6e+02 8.1e+02 0 0 0]
+y: [-3.3e+03 -1.2e+02 3.3e+03 1.8e+02 6.2 0 0.47 -0.47 0 3.4e+03 ... -2.9 0 0.39 5e+02 2.6e+02 6.6e+02 58 7.6 9.3 0]
+}
+
+time:  0.0  0.0 sec  glpk simplex SCAGR7
+x: ||max 4.6e+03 at 130  quantiles: [0 0 0 2.4e+02 8.2e+02 2.5e+03 4.6e+03] 
+c*x: min -5.4e+05 = -6.6e+02 * 8.1e+02 at 136  quantiles: [-5.4e+05 -4.2e+04 0 5.6e+02 8.4e+03 2.5e+04 6.9e+04] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/scfxm1.mps.gz
+Reading problem data from 'netlib/zib/mps/scfxm1.mps.gz'...
+Problem: SCFXM1
+Objective: .COSTA
+331 rows, 457 columns, 2612 non-zeros
+1821 records were read
+One free row was removed
+
+lp_to_gnulp: A (330, 457), 2589 non0 
+
+{ gnulp_solve SCFXM1 simplex  330 rows, 457 cols   
+Scaling...
+ A: min|aij| =  5.000e-04  max|aij| =  1.300e+02  ratio =  2.600e+05
+GM: min|aij| =  9.325e-02  max|aij| =  1.072e+01  ratio =  1.150e+02
+EQ: min|aij| =  8.745e-03  max|aij| =  1.000e+00  ratio =  1.144e+02
+obj: 18416.8  status: opt feas  SCFXM1 simplex  330 rows, 457 cols   
+x: [0 0 56 0 11 36 0 1.1e+02 29 22 ... 0 1.3e+02 7.1e+02 30 3.9e+02 1.7e+03 2 0 0 0]
+y: [-2.7 -2.2 -4.2 -3.3 -0.13 -4.5 -4.9 -1.4 -5.4 -3.9 ... 0 0 0 0 0 0 -3.8 0 0 0]
+}
+
+time:  0.0  0.0 sec  glpk simplex SCFXM1
+x: ||max 1.4e+04 at 398  quantiles: [-3.5e-15 0 0 0.83 26 95 1.4e+04] 
+c*x: min -1e+03 = -1 * 1e+03 at 67  quantiles: [-1e+03 0 0 0 0 0 1.4e+04] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/scfxm2.mps.gz
+Reading problem data from 'netlib/zib/mps/scfxm2.mps.gz'...
+Problem: SCFXM2
+Objective: .COSTA
+661 rows, 914 columns, 5229 non-zeros
+3644 records were read
+One free row was removed
+
+lp_to_gnulp: A (660, 914), 5183 non0 
+
+{ gnulp_solve SCFXM2 simplex  660 rows, 914 cols   
+Scaling...
+ A: min|aij| =  5.000e-04  max|aij| =  1.300e+02  ratio =  2.600e+05
+GM: min|aij| =  8.747e-02  max|aij| =  1.143e+01  ratio =  1.307e+02
+EQ: min|aij| =  7.714e-03  max|aij| =  1.000e+00  ratio =  1.296e+02
+obj: 36660.3  status: opt feas  SCFXM2 simplex  660 rows, 914 cols   
+x: [36 0 20 0 11 0 0 1.1e+02 29 58 ... 0 1.3e+02 7e+02 30 3.9e+02 1.7e+03 2 0 0 0]
+y: [-2.7 -2.2 -4.2 -3.3 -0.13 -4.8 -4.9 -1.4 -5.4 -3.9 ... 0 0 0 0 0 0 -3.8 0 0 0]
+}
+
+time:  0.0  0.0 sec  glpk simplex SCFXM2
+x: ||max 1.5e+04 at 398  quantiles: [-3.8e-15 0 0 1 26 1e+02 1.5e+04] 
+c*x: min -1.1e+03 = -1 * 1.1e+03 at 67  quantiles: [-1.1e+03 0 0 0 0 0 1.5e+04] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/scfxm3.mps.gz
+Reading problem data from 'netlib/zib/mps/scfxm3.mps.gz'...
+Problem: SCFXM3
+Objective: .COSTA
+991 rows, 1371 columns, 7846 non-zeros
+5466 records were read
+One free row was removed
+
+lp_to_gnulp: A (990, 1371), 7777 non0 
+
+{ gnulp_solve SCFXM3 simplex  990 rows, 1371 cols   
+Scaling...
+ A: min|aij| =  5.000e-04  max|aij| =  1.300e+02  ratio =  2.600e+05
+GM: min|aij| =  8.747e-02  max|aij| =  1.143e+01  ratio =  1.307e+02
+EQ: min|aij| =  7.714e-03  max|aij| =  1.000e+00  ratio =  1.296e+02
+obj: 54901.3  status: opt feas  SCFXM3 simplex  990 rows, 1371 cols   
+x: [36 0 20 0 11 0 0 1.1e+02 8.6 58 ... 0 1.3e+02 7e+02 30 3.9e+02 1.7e+03 2 0 0 0]
+y: [-2.7 -2.2 -4.2 -3.3 -0.13 -4.8 -4.9 -1.4 -5.4 -3.9 ... 0 0 0 0 0 0 -3.8 0 0 0]
+}
+
+time:  0.1  0.1 sec  glpk simplex SCFXM3
+x: ||max 1.5e+04 at 855  quantiles: [-2.1e-13 0 0 1.1 26 1e+02 1.5e+04] 
+c*x: min -1.2e+03 = -1 * 1.2e+03 at 524  quantiles: [-1.2e+03 0 0 0 0 0 1.5e+04] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/scorpion.mps.gz
+Reading problem data from 'netlib/zib/mps/scorpion.mps.gz'...
+Problem: SCORPION
+Objective: C9999
+389 rows, 358 columns, 1708 non-zeros
+1373 records were read
+One free row was removed
+
+lp_to_gnulp: A (388, 358), 1426 non0 
+
+{ gnulp_solve SCORPION simplex  388 rows, 358 cols   
+Scaling...
+ A: min|aij| =  1.000e-02  max|aij| =  1.000e+00  ratio =  1.000e+02
+GM: min|aij| =  1.132e-01  max|aij| =  8.833e+00  ratio =  7.803e+01
+EQ: min|aij| =  1.282e-02  max|aij| =  1.000e+00  ratio =  7.803e+01
+obj: 1878.12  status: opt feas  SCORPION simplex  388 rows, 358 cols   
+x: [0.0085 0.002 0 0 1.4 0 0.00015 0.0039 0.001 0.0047 ... 0.12 0.29 0.6 0.68 0.2 0.012 0.28 0.55 0.94 2.7]
+y: [0 1.2e+02 1.2e+02 1.2e+02 0 4.4e+02 4.9e+02 4.6e+02 57 0 ... -59 -61 -46 -45 -48 -49 -47 -43 -30 -40]
+}
+
+time:  0.0  0.0 sec  glpk simplex SCORPION
+x: ||max 2.7 at 357  quantiles: [-3.2e-19 0 0 0.056 0.24 0.55 2.7] 
+c*x: min -4.4e-19 = 1.4 * -3.2e-19 at 147  quantiles: [-4.4e-19 0 0 0.002 0.23 3.3 3.3e+02] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/scrs8.mps.gz
+Reading problem data from 'netlib/zib/mps/scrs8.mps.gz'...
+Problem: SCRS8
+Objective: COST
+491 rows, 1169 columns, 4029 non-zeros
+2717 records were read
+One free row was removed
+
+lp_to_gnulp: A (490, 1169), 3182 non0 
+
+{ gnulp_solve SCRS8 simplex  490 rows, 1169 cols   
+Scaling...
+ A: min|aij| =  1.000e-03  max|aij| =  3.888e+02  ratio =  3.888e+05
+GM: min|aij| =  2.523e-01  max|aij| =  3.964e+00  ratio =  1.571e+01
+EQ: min|aij| =  6.364e-02  max|aij| =  1.000e+00  ratio =  1.571e+01
+obj: 904.297  status: opt feas  SCRS8 simplex  490 rows, 1169 cols   
+x: [0 0 0 0 0 0 0 0 0 0 ... 0 0 0 0 0 0 0 0 0 0]
+y: [0 6.1e+02 7e+02 8.6e+02 0 0 97 -5.3e+02 0 0 ... 0 0 0 0 0 0 0 0 0 -63]
+}
+
+time:  0.0  0.0 sec  glpk simplex SCRS8
+x: ||max 2.1e+02 at 1132  quantiles: [-2.9e-15 0 0 0 0 0.91 2.1e+02] 
+c*x: min -3.8e-15 = 8.4 * -4.5e-16 at 734  quantiles: [-3.8e-15 0 0 0 0 0.34 66] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/scsd1.mps.gz
+Reading problem data from 'netlib/zib/mps/scsd1.mps.gz'...
+Problem: SCSD1
+Objective: 50000000
+78 rows, 760 columns, 3148 non-zeros
+2016 records were read
+One free row was removed
+
+lp_to_gnulp: A (77, 760), 2388 non0 
+
+{ gnulp_solve SCSD1 simplex  77 rows, 760 cols   
+Scaling...
+ A: min|aij| =  2.425e-01  max|aij| =  1.000e+00  ratio =  4.123e+00
+Problem data seem to be well scaled
+obj: 8.66667  status: opt feas  SCSD1 simplex  77 rows, 760 cols   
+x: [0 0 0 0 0 0 0 0 0 0 ... 0 0 0 0 0 0 -1.5e-16 0 0 0]
+y: [3.8 -2.3 2.8 -4.8 1.8 -8.7 0.83 -4.5 0.5 -1.7 ... -1.8 4.2 -1 1 -0.83 2 -1.7 3 -1.2 4]
+}
+
+time:  0.0  0.0 sec  glpk simplex SCSD1
+x: ||max 0.67 at 73  quantiles: [-4.8e-16 0 0 0 0 0 0.67] 
+c*x: min -7.6e-16 = 2.2 * -3.4e-16 at 471  quantiles: [-7.6e-16 0 0 0 0 0 1.7] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/scsd6.mps.gz
+Reading problem data from 'netlib/zib/mps/scsd6.mps.gz'...
+Problem: SCSD6
+Objective: 50000000
+148 rows, 1350 columns, 5666 non-zeros
+3650 records were read
+One free row was removed
+
+lp_to_gnulp: A (147, 1350), 4316 non0 
+
+{ gnulp_solve SCSD6 simplex  147 rows, 1350 cols   
+Scaling...
+ A: min|aij| =  2.425e-01  max|aij| =  1.000e+00  ratio =  4.123e+00
+Problem data seem to be well scaled
+obj: 50.5  status: opt feas  SCSD6 simplex  147 rows, 1350 cols   
+x: [0 4.9e-18 0 6.4e-33 0 0 0 0 0 0 ... 0 0 0 0 0 0 0 0 7.5e-33 0]
+y: [4 -10 3 -15 2 -16 1 -15 2 -12 ... -2 3 -1 1 -1 2 -4 3 -1 4]
+}
+
+time:  0.0  0.0 sec  glpk simplex SCSD6
+x: ||max 1.8 at 1159  quantiles: [-1.3e-16 0 0 0 0 0 1.8] 
+c*x: min -1.3e-16 = 1 * -1.3e-16 at 1302  quantiles: [-1.3e-16 0 0 0 0 0 3.5] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/scsd8.mps.gz
+Reading problem data from 'netlib/zib/mps/scsd8.mps.gz'...
+Problem: SCSD8
+Objective: 50000000
+398 rows, 2750 columns, 11334 non-zeros
+7443 records were read
+One free row was removed
+
+lp_to_gnulp: A (397, 2750), 8584 non0 
+
+{ gnulp_solve SCSD8 simplex  397 rows, 2750 cols   
+Scaling...
+ A: min|aij| =  2.425e-01  max|aij| =  1.000e+00  ratio =  4.123e+00
+Problem data seem to be well scaled
+obj: 905  status: opt feas  SCSD8 simplex  397 rows, 2750 cols   
+x: [0 0 0 0 0 0 0 0 0 0 ... 0 0 0 0 0 0 0 0 0 0]
+y: [3.3 -37 2.3 -41 1.3 -42 0.33 -41 -0.67 -37 ... -3.3 2.7 -1 0.33 -2 1.3 -3.3 2.3 -2.3 3.3]
+}
+
+time:  0.1  0.1 sec  glpk simplex SCSD8
+x: ||max 22 at 2529  quantiles: [-2.5e-16 0 0 0 0 0.17 22] 
+c*x: min -5.6e-16 = 2.2 * -2.5e-16 at 2392  quantiles: [-5.6e-16 0 0 0 0 0.17 22] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/sctap1.mps.gz
+Reading problem data from 'netlib/zib/mps/sctap1.mps.gz'...
+Problem: SCTAP1
+Objective: OBJZZZZZ
+301 rows, 480 columns, 2052 non-zeros
+1619 records were read
+One free row was removed
+
+lp_to_gnulp: A (300, 480), 1692 non0 
+
+{ gnulp_solve SCTAP1 simplex  300 rows, 480 cols   
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  8.000e+01  ratio =  8.000e+01
+GM: min|aij| =  3.957e-01  max|aij| =  2.527e+00  ratio =  6.386e+00
+EQ: min|aij| =  1.610e-01  max|aij| =  1.000e+00  ratio =  6.213e+00
+obj: 1412.25  status: opt feas  SCTAP1 simplex  300 rows, 480 cols   
+x: [1 0 -6.4e-15 0 1 0 0 0 1 0 ... 0 0 1 2.5e-15 0 0 1 0 0 1.2]
+y: [3 2 0 0 0 0 3.7 0 0 0 ... -8.9e-14 0 0 0 0 -4e-15 8.5e-14 -4.5e-14 -1.4e-13 2.9e-14]
+}
+
+time:  0.0  0.0 sec  glpk simplex SCTAP1
+x: ||max 17 at 271  quantiles: [-6.2e-14 0 0 0 0.74 1 17] 
+c*x: min -1.3e-13 = 20 * -6.4e-15 at 2  quantiles: [-1.3e-13 0 0 0 0 10 80] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/sctap2.mps.gz
+Reading problem data from 'netlib/zib/mps/sctap2.mps.gz'...
+Problem: SCTAP2
+Objective: OBJZZZZZ
+1091 rows, 1880 columns, 8124 non-zeros
+6285 records were read
+One free row was removed
+
+lp_to_gnulp: A (1090, 1880), 6714 non0 
+
+{ gnulp_solve SCTAP2 simplex  1090 rows, 1880 cols   
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  8.000e+01  ratio =  8.000e+01
+GM: min|aij| =  3.968e-01  max|aij| =  2.520e+00  ratio =  6.350e+00
+EQ: min|aij| =  1.614e-01  max|aij| =  1.000e+00  ratio =  6.195e+00
+obj: 1724.81  status: opt feas  SCTAP2 simplex  1090 rows, 1880 cols   
+x: [1 0 0 0 1 0 0 0 1 0 ... 0 0 1 0 0 0 1 0 0 0]
+y: [2 2 0 0 0 0 2 2 2 0 ... 0 0 0 0 0 0 0 0 0 0]
+}
+
+time:  0.1  0.1 sec  glpk simplex SCTAP2
+x: ||max 1 at 224  quantiles: [-1.2e-15 0 0 0 0.5 1 1] 
+c*x: min -1.2e-14 = 10 * -1.2e-15 at 797  quantiles: [-1.2e-14 0 0 0 0 0 50] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/sctap3.mps.gz
+Reading problem data from 'netlib/zib/mps/sctap3.mps.gz'...
+Problem: SCTAP3
+Objective: OBJZZZZZ
+1481 rows, 2480 columns, 10734 non-zeros
+8345 records were read
+One free row was removed
+
+lp_to_gnulp: A (1480, 2480), 8874 non0 
+
+{ gnulp_solve SCTAP3 simplex  1480 rows, 2480 cols   
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  8.000e+01  ratio =  8.000e+01
+GM: min|aij| =  3.968e-01  max|aij| =  2.520e+00  ratio =  6.350e+00
+EQ: min|aij| =  1.614e-01  max|aij| =  1.000e+00  ratio =  6.195e+00
+obj: 1424  status: opt feas  SCTAP3 simplex  1480 rows, 2480 cols   
+x: [1 0 0 0 1 0 0 0 1 0 ... 0 0 1 0 0 0 1 0 0 0]
+y: [2 2 0 0 0 0 2 0 2 0 ... 0 0 0 0 0 0 0 -1.7e-15 0 0]
+}
+
+time:  0.1  0.1 sec  glpk simplex SCTAP3
+x: ||max 1 at 1776  quantiles: [-1.6e-15 0 0 0 0.5 1 1] 
+c*x: min -1.6e-14 = 10 * -1.6e-15 at 2177  quantiles: [-1.6e-14 0 0 0 0 0 48] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/seba.mps.gz
+Reading problem data from 'netlib/zib/mps/seba.mps.gz'...
+Problem: SEBA
+Objective: 00000000
+516 rows, 1028 columns, 4874 non-zeros
+4184 records were read
+One free row was removed
+
+lp_to_gnulp: A (515, 1028), 4352 non0 
+
+{ gnulp_solve SEBA simplex  515 rows, 1028 cols   
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.560e+02  ratio =  1.560e+02
+GM: min|aij| =  3.576e-01  max|aij| =  2.796e+00  ratio =  7.820e+00
+EQ: min|aij| =  1.302e-01  max|aij| =  1.000e+00  ratio =  7.678e+00
+obj: 15711.6  status: opt feas  SEBA simplex  515 rows, 1028 cols   
+x: [1.5 0 5 10 0 0 2 2.5 4 0 ... 0 0 0 0 0 0 0 0 0 0]
+y: [0 3.6e-15 0 0 0 0 0 0 0 -4.8e-16 ... 0 1.7e+02 61 0 2.7e+02 1.9e+02 1.3e+02 -42 -63 0]
+}
+
+time:  0.0  0.0 sec  glpk simplex SEBA
+x: ||max 1.4e+04 at 42  quantiles: [-5.8e-16 0 0 0 72 3.4e+02 1.4e+04] 
+c*x: min -2.6e-13 = 4.4e+02 * -5.8e-16 at 10  quantiles: [-2.6e-13 0 0 0 0 0 6.6e+03] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/share1b.mps.gz
+Reading problem data from 'netlib/zib/mps/share1b.mps.gz'...
+Problem: SHARE1B
+Objective: 000000
+118 rows, 225 columns, 1182 non-zeros
+799 records were read
+One free row was removed
+
+lp_to_gnulp: A (117, 225), 1151 non0 
+
+{ gnulp_solve SHARE1B simplex  117 rows, 225 cols   
+Scaling...
+ A: min|aij| =  1.000e-01  max|aij| =  1.322e+03  ratio =  1.322e+04
+GM: min|aij| =  1.704e-01  max|aij| =  5.869e+00  ratio =  3.444e+01
+EQ: min|aij| =  2.903e-02  max|aij| =  1.000e+00  ratio =  3.444e+01
+obj: -76589.3  status: opt feas  SHARE1B simplex  117 rows, 225 cols   
+x: [3.3e+02 0 78 0 0 3.8 73 0 11 0 ... 0 0 0 9.5e+02 0 0 64 0 0 0]
+y: [-11 8.6 6.5 -5.3 8.9 -7.6 -7.9 5.6 -11 -43 ... 0 0 0 -3.8 -8.3 24 1.2 0.064 0.052 0.71]
+}
+
+time:  0.0  0.0 sec  glpk simplex SHARE1B
+x: ||max 1.3e+06 at 22  quantiles: [0 0 0 0 1.3e+02 2e+03 1.3e+06] 
+c*x: min -4.4e+04 = -4.2 * 1e+04 at 19  quantiles: [-4.4e+04 0 0 0 0 0 3.1e+03] 
+lp_check: blo > Ax  0.0001 > 9.99876e-05  at [46] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/share2b.mps.gz
+Reading problem data from 'netlib/zib/mps/share2b.mps.gz'...
+Problem: SHARE2B
+Objective: 000000
+97 rows, 79 columns, 730 non-zeros
+495 records were read
+One free row was removed
+
+lp_to_gnulp: A (96, 79), 694 non0 
+
+{ gnulp_solve SHARE2B simplex  96 rows, 79 cols   
+Scaling...
+ A: min|aij| =  1.000e-02  max|aij| =  1.030e+02  ratio =  1.030e+04
+GM: min|aij| =  2.867e-01  max|aij| =  3.488e+00  ratio =  1.216e+01
+EQ: min|aij| =  8.423e-02  max|aij| =  1.000e+00  ratio =  1.187e+01
+obj: -415.732  status: opt feas  SHARE2B simplex  96 rows, 79 cols   
+x: [2 2 0 0 0 0 5.8 9.6 58 19 ... 0.33 4.1 1.5 2.5 1.5 0 5.3 0 9.5 17]
+y: [-0.13 0 0 0 0 -0.33 0 -1.9 -2.1 -1.9e+02 ... -0.064 0 1.2e-13 0 2.1e-14 0 -0.021 0 0 1.6]
+}
+
+time:  0.0  0.0 sec  glpk simplex SHARE2B
+x: ||max 58 at 8  quantiles: [-3.3e-13 0 0 1.2 5.8 17 58] 
+c*x: min -74 = -3.8 * 19 at 9  quantiles: [-74 -17 0 0 0 0.35 5.2] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/shell.mps.gz
+Reading problem data from 'netlib/zib/mps/shell.mps.gz'...
+Problem: SHELL
+Objective: 3537
+537 rows, 1775 columns, 4900 non-zeros
+4039 records were read
+One free row was removed
+
+lp_to_gnulp: A (536, 1775), 3556 non0 
+
+{ gnulp_solve SHELL simplex  536 rows, 1775 cols   
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+obj: 1.20883e+09  status: opt feas  SHELL simplex  536 rows, 1775 cols   
+x: [2.8e+05 8.2e+04 1.1e+03 1.1e+05 2.4e+04 7.1e+04 0 7.9e+04 0 1.1e+05 ... 5.6e+02 3e+02 1.4e+02 1.3e+02 1.1e+02 3.7e+02 4.4e+02 1.8e+02 27
+ 7.7e+02]
+y: [0 0 -4e+03 1.9e+02 80 0 2.7e+02 -4e+03 2.7e+02 53 ... -6.1e+02 3 -5.3e+02 48 1.4e+02 17 38 1.4e-14 3.8e+02 -6.1e+02]
+}
+
+time:  0.0  0.0 sec  glpk simplex SHELL
+x: ||max 2.8e+05 at 0  quantiles: [0 0 0 0 3.1e+02 2.4e+03 2.8e+05] 
+c*x: min 0 = 0 * 2.8e+05 at 0  quantiles: [0 0 0 0 0 4e+04 4.3e+08] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/sierra.mps.gz
+Reading problem data from 'netlib/zib/mps/sierra.mps.gz'...
+Problem: SIERRA
+Objective: OBJ
+1228 rows, 2036 columns, 9252 non-zeros
+8977 records were read
+One free row was removed
+
+lp_to_gnulp: A (1227, 2036), 7302 non0 
+
+{ gnulp_solve SIERRA simplex  1227 rows, 2036 cols   
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+05  ratio =  1.000e+05
+GM: min|aij| =  5.876e-01  max|aij| =  1.702e+00  ratio =  2.897e+00
+EQ: min|aij| =  3.705e-01  max|aij| =  1.000e+00  ratio =  2.699e+00
+obj: 1.53944e+07  status: opt feas  SIERRA simplex  1227 rows, 2036 cols   
+x: [34 7.1e+02 34 8.2e+02 34 9.3e+02 34 1.1e+03 34 1.2e+03 ... 0 0 0 0 0 0 0 0 0 0]
+y: [0 0 0 0 0 0 0 0 0 0 ... 5.7e+02 2.2e+02 63 24 9.4 5.6e+03 1.6e+02 63 24 9.4]
+}
+
+time:  0.1  0.1 sec  glpk simplex SIERRA
+x: ||max 2.1e+03 at 15  quantiles: [-4.5e-14 0 0 0 0 50 2.1e+03] 
+c*x: min -6.5e-12 = 1.4e+02 * -4.5e-14 at 1719  quantiles: [-6.5e-12 0 0 0 0 1.1e+04 3.7e+05] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/stair.mps.gz
+Reading problem data from 'netlib/zib/mps/stair.mps.gz'...
+Problem: STAIR
+Objective: MXR
+357 rows, 467 columns, 3857 non-zeros
+2499 records were read
+One free row was removed
+
+lp_to_gnulp: A (356, 467), 3856 non0 
+
+{ gnulp_solve STAIR simplex  356 rows, 467 cols   
+Scaling...
+ A: min|aij| =  1.000e-05  max|aij| =  9.853e+00  ratio =  9.853e+05
+GM: min|aij| =  1.110e-02  max|aij| =  9.006e+01  ratio =  8.111e+03
+EQ: min|aij| =  1.237e-04  max|aij| =  1.000e+00  ratio =  8.087e+03
+obj: -214.585  status: nofeas infeas  STAIR simplex  356 rows, 467 cols   
+x: [0 55 2.1e+02 1.3 0.27 0.77 3.2 0.86 1.9 10 ... 0 0 0 0 0 0.37 1.3 2.9 9.8 5.9]
+y: [0.11 -2.1e-14 -0.79 0 -0.0048 0.0013 0.0014 0.0005 0 0 ... 0 -3.8e-15 -3.8 0 0 0 0 3.8 0 0]
+}
+
+time:  0.0  0.0 sec  glpk simplex STAIR
+x: ||max 3.8e+02 at 425  quantiles: [-0.5 0 0 1.9 15 64 3.8e+02] 
+c*x: min -2.1e+02 = -1 * 2.1e+02 at 19  quantiles: [-2.1e+02 0 0 0 0 0 0] 
+lp_check: Ax > b  3.2655 > -4.2  at [316] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/standata.mps.gz
+Reading problem data from 'netlib/zib/mps/standata.mps.gz'...
+Problem: STANDATA
+Objective: FAT...J.
+360 rows, 1075 columns, 3038 non-zeros
+2317 records were read
+One free row was removed
+
+lp_to_gnulp: A (359, 1075), 3031 non0 
+
+{ gnulp_solve STANDATA simplex  359 rows, 1075 cols   
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  3.000e+02  ratio =  3.000e+02
+GM: min|aij| =  5.775e-01  max|aij| =  1.732e+00  ratio =  2.998e+00
+EQ: min|aij| =  3.393e-01  max|aij| =  1.000e+00  ratio =  2.947e+00
+obj: 1257.7  status: opt feas  STANDATA simplex  359 rows, 1075 cols   
+x: [10 0 0 10 0 10 0 0 10 0 ... 0 0 0 0 0 0 0 0 0 0]
+y: [2.4e-15 8.2e-16 1.6e-15 8.2e-16 -1.6e-15 1.6e-15 0 0 0 0 ... 0 0 0 0 0 0 0 0 0 0]
+}
+
+time:  0.0  0.0 sec  glpk simplex STANDATA
+x: ||max 9.8e+02 at 111  quantiles: [0 0 0 0 0 0 9.8e+02] 
+c*x: min 0 = 0 * 10 at 0  quantiles: [0 0 0 0 0 0 9.8e+02] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/standmps.mps.gz
+Reading problem data from 'netlib/zib/mps/standmps.mps.gz'...
+Problem: STANDMPS
+Objective: FAT...J.
+468 rows, 1075 columns, 3686 non-zeros
+2695 records were read
+One free row was removed
+
+lp_to_gnulp: A (467, 1075), 3679 non0 
+
+{ gnulp_solve STANDMPS simplex  467 rows, 1075 cols   
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  3.000e+02  ratio =  3.000e+02
+GM: min|aij| =  5.726e-01  max|aij| =  1.746e+00  ratio =  3.050e+00
+EQ: min|aij| =  3.351e-01  max|aij| =  1.000e+00  ratio =  2.984e+00
+obj: 1406.02  status: opt feas  STANDMPS simplex  467 rows, 1075 cols   
+x: [10 0 0 4.2 5.8 10 0 0 5.2 4.8 ... 0.28 0 0 0 0 0 0.3 0 0 0]
+y: [-3e-15 1.6e-15 0 1.2e-15 1.3e-15 1.6e-15 -3.1e-15 0 0 5.1e-15 ... -5.3 -5.3 -2.3 -2.3 0.7 0.7 3.7 3.7 6.7 6.7]
+}
+
+time:  0.0  0.0 sec  glpk simplex STANDMPS
+x: ||max 1.2e+03 at 111  quantiles: [-9.9e-17 0 0 0 0 0.55 1.2e+03] 
+c*x: min 0 = 0 * 10 at 0  quantiles: [0 0 0 0 0 0 1.2e+03] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/stocfor1.mps.gz
+Reading problem data from 'netlib/zib/mps/stocfor1.mps.gz'...
+Problem: STOCFOR1
+Objective: HARV
+118 rows, 111 columns, 474 non-zeros
+376 records were read
+One free row was removed
+
+lp_to_gnulp: A (117, 111), 447 non0 
+
+{ gnulp_solve STOCFOR1 simplex  117 rows, 111 cols   
+Scaling...
+ A: min|aij| =  6.258e-02  max|aij| =  3.366e+02  ratio =  5.379e+03
+GM: min|aij| =  2.502e-01  max|aij| =  3.997e+00  ratio =  1.598e+01
+EQ: min|aij| =  6.519e-02  max|aij| =  1.000e+00  ratio =  1.534e+01
+obj: -41132  status: opt feas  STOCFOR1 simplex  117 rows, 111 cols   
+x: [0 0 0 0 0 20 0.24 0.12 1.4 2 ... 22 17 18 18 18 2.2 0 0 3.3e+03 0]
+y: [0 0 0 0 0 0 -3.6e+02 -4.1e+02 -4.3e+02 -4.3e+02 ... -1.8e+02 -2e+02 -2.2e+02 -2.5e+02 -3.2e+02 -4.3e+02 -5e+02 -0.61 0 1.2]
+}
+
+time:  0.0  0.0 sec  glpk simplex STOCFOR1
+x: ||max 6.3e+03 at 14  quantiles: [-1.3e-14 0 0 1.1 19 25 6.3e+03] 
+c*x: min -6.3e+03 = -1 * 6.3e+03 at 14  quantiles: [-6.3e+03 -1.8e+03 0 0 0 0 3.2e+03] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/stocfor2.mps.gz
+Reading problem data from 'netlib/zib/mps/stocfor2.mps.gz'...
+Problem: STOCFOR2
+Objective: HARV
+2158 rows, 2031 columns, 9492 non-zeros
+7486 records were read
+One free row was removed
+
+lp_to_gnulp: A (2157, 2031), 8343 non0 
+
+{ gnulp_solve STOCFOR2 simplex  2157 rows, 2031 cols   
+Scaling...
+ A: min|aij| =  2.027e-01  max|aij| =  3.366e+02  ratio =  1.661e+03
+GM: min|aij| =  4.512e-01  max|aij| =  2.216e+00  ratio =  4.912e+00
+EQ: min|aij| =  2.045e-01  max|aij| =  1.000e+00  ratio =  4.889e+00
+obj: -39024.4  status: opt feas  STOCFOR2 simplex  2157 rows, 2031 cols   
+x: [0 0 0 0 0 17 0.24 0.12 1.4 2 ... 34 27 18 15 0.11 0 0 0 2e+03 1.3e+02]
+y: [0 0 0 0 0 0 -3.8e+02 -4e+02 -4.1e+02 -4.1e+02 ... -0.15 -0.43 -2.9 -5.8 -14 -18 -8.2 -0.026 0 0.027]
+}
+
+time:  0.2  0.2 sec  glpk simplex STOCFOR2
+x: ||max 5.2e+03 at 14  quantiles: [-7.7e-14 0 0 1.4 14 30 5.2e+03] 
+c*x: min -5.2e+03 = -1 * 5.2e+03 at 14  quantiles: [-5.2e+03 -45 -4.5e-14 0 0 0 2.5e+02] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/stocfor3.mps.gz
+Reading problem data from 'netlib/zib/mps/stocfor3.mps.gz'...
+Problem: STOCHFOR
+Objective: HARV
+16676 rows, 15695 columns, 74004 non-zeros
+94447 records were read
+One free row was removed
+
+lp_to_gnulp: A (16675, 15695), 64875 non0 
+
+{ gnulp_solve STOCHFOR simplex  16675 rows, 15695 cols   
+Scaling...
+ A: min|aij| =  6.258e-02  max|aij| =  3.366e+02  ratio =  5.379e+03
+GM: min|aij| =  3.050e-01  max|aij| =  3.278e+00  ratio =  1.075e+01
+EQ: min|aij| =  9.420e-02  max|aij| =  1.000e+00  ratio =  1.062e+01
+obj: -39976.8  status: opt feas  STOCHFOR simplex  16675 rows, 15695 cols   
+x: [0 0 0 0 0 19 0.24 0.12 1.4 2 ... 33 23 19 11 8.6 0 0 0 3.1e+03 0]
+y: [0 0 0 0 0 0 -3.8e+02 -4.1e+02 -4.2e+02 -4.2e+02 ... -0.12 -0.13 -0.85 -1.7 -2.2 -2.4 -2.4 -0.0075 0 0.0079]
+}
+
+time: 16.5 16.5 sec  glpk simplex STOCHFOR
+x: ||max 5.7e+03 at 14  quantiles: [-3.3e-14 0 0 2 16 30 5.7e+03] 
+c*x: min -5.7e+03 = -1 * 5.7e+03 at 14  quantiles: [-5.7e+03 -2.8 -5.4e-18 0 0 0 1.4e+02] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/truss.mps.gz
+Reading problem data from 'netlib/zib/mps/truss.mps.gz'...
+Problem: TRUSS
+Objective: OBJ
+1001 rows, 8806 columns, 36642 non-zeros
+23814 records were read
+One free row was removed
+
+lp_to_gnulp: A (1000, 8806), 27836 non0 
+
+{ gnulp_solve TRUSS simplex  1000 rows, 8806 cols   
+Scaling...
+ A: min|aij| =  4.472e-01  max|aij| =  1.000e+00  ratio =  2.236e+00
+Problem data seem to be well scaled
+obj: 458816  status: opt feas  TRUSS simplex  1000 rows, 8806 cols   
+x: [0 0 29 0 80 0 2.1e+02 0 0 0 ... 0 0 0 0 0 0 0 0 0 0]
+y: [21 31 35 25 22 25 22 25 35 42 ... -1.1e+02 -2e+02 -3.3e+02 -4.1e+02 -5.2e+02 5.3e+02 4.3e+02 3.2e+02 2.3e+02 1.3e+02]
+}
+
+time:  1.5  1.5 sec  glpk simplex TRUSS
+x: ||max 7.4e+02 at 10  quantiles: [-1.2e-14 0 0 0 0 0 7.4e+02] 
+c*x: min -2.7e-13 = 22 * -1.2e-14 at 5633  quantiles: [-2.7e-13 0 0 0 0 0 1.7e+04] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/tuff.mps.gz
+Reading problem data from 'netlib/zib/mps/tuff.mps.gz'...
+Problem: TUFF
+Objective: B...ML..
+334 rows, 587 columns, 4523 non-zeros
+2771 records were read
+One free row was removed
+
+lp_to_gnulp: A (333, 587), 4520 non0 
+
+{ gnulp_solve TUFF simplex  333 rows, 587 cols   
+Scaling...
+ A: min|aij| =  1.000e-05  max|aij| =  1.000e+04  ratio =  1.000e+09
+GM: min|aij| =  3.162e-03  max|aij| =  3.162e+02  ratio =  1.000e+05
+EQ: min|aij| =  1.000e-05  max|aij| =  1.000e+00  ratio =  1.000e+05
+obj: 0.310972  status: opt feas  TUFF simplex  333 rows, 587 cols   
+x: [0 0 0 0 0 0 0 0 0 0 ... 8.3e+02 4.1e+02 3.1e+02 7.7e+02 8.8e+02 0.0016 72 7.6e+02 4e+02 2.7e+02]
+y: [-3.5e-06 -0.0022 -0.0022 0 0 0 0 -0.004 -0.0031 -0.004 ... -2.3e-20 0 0 0 0 0 0 0 0 0]
+}
+
+time:  0.0  0.0 sec  glpk simplex TUFF
+x: ||max 4.3e+03 at 567  quantiles: [-1.5e-11 0 0 0 0 12 4.3e+03] 
+c*x: min 0 = 0 * 0 at 0  quantiles: [0 0 0 0 0 0 0.22] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/vtp-base.mps.gz
+Reading problem data from 'netlib/zib/mps/vtp-base.mps.gz'...
+Problem: VTP.BASE
+Objective: FAT...J.
+199 rows, 203 columns, 914 non-zeros
+906 records were read
+One free row was removed
+
+lp_to_gnulp: A (198, 203), 908 non0 
+
+{ gnulp_solve VTP.BASE simplex  198 rows, 203 cols   
+Scaling...
+ A: min|aij| =  1.333e-01  max|aij| =  4.000e+03  ratio =  3.000e+04
+GM: min|aij| =  2.447e-01  max|aij| =  4.087e+00  ratio =  1.670e+01
+EQ: min|aij| =  5.987e-02  max|aij| =  1.000e+00  ratio =  1.670e+01
+obj: 129831  status: opt feas  VTP.BASE simplex  198 rows, 203 cols   
+x: [1e+05 0 5.6e+03 0 0 2.2e+04 0 0 0 0 ... 0 0 0 0 0 0 0 1 2.5e+03 46]
+y: [-1 -1 -1 0 0 -1 -30 -15 -20 -16 ... 0 -4.4e+02 0 0 -2.2e+02 0 0 0 0 -1]
+}
+
+time:  0.0  0.0 sec  glpk simplex VTP.BASE
+x: ||max 1e+05 at 0  quantiles: [0 0 0 0 53 1.1e+03 1e+05] 
+c*x: min 0 = 1 * 0 at 1  quantiles: [0 0 0 0 0 0 1e+05] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/wood1p.mps.gz
+Reading problem data from 'netlib/zib/mps/wood1p.mps.gz'...
+Problem: WOOD1P
+Objective: COST
+245 rows, 2594 columns, 70216 non-zeros
+35535 records were read
+One free row was removed
+
+lp_to_gnulp: A (244, 2594), 70215 non0 
+
+{ gnulp_solve WOOD1P simplex  244 rows, 2594 cols   
+Scaling...
+ A: min|aij| =  3.000e-05  max|aij| =  1.000e+03  ratio =  3.333e+07
+GM: min|aij| =  3.464e-04  max|aij| =  2.887e+03  ratio =  8.333e+06
+EQ: min|aij| =  1.200e-07  max|aij| =  1.000e+00  ratio =  8.333e+06
+obj: 1.4429  status: opt feas  WOOD1P simplex  244 rows, 2594 cols   
+x: [-2.6e-20 0 0 0 0 0 0 0 0 0 ... 0 0 0 0 0 0 0 2.5e-06 1.4 0.85]
+y: [-2.5 -0.00059 -0.0022 -0.00084 0 -0.0011 0 -0.0032 -0.0035 -0.0032 ... -0.0093 -0.0091 -0.0093 -0.0091 -0.0093 -0.0095 -0.0095 -1 4.6 4.6]
+}
+
+time:  0.1  0.1 sec  glpk simplex WOOD1P
+x: ||max 1.4 at 2592  quantiles: [-3.6e-17 0 0 0 0 0 1.4] 
+c*x: min -0 = 0 * -2.6e-20 at 0  quantiles: [0 0 0 0 0 0 1.4] 
+
+--------------------------------------------------------------------------------
+-- netlib/zib/mps/woodw.mps.gz
+Reading problem data from 'netlib/zib/mps/woodw.mps.gz'...
+Problem: WOODW
+Objective: TRCOST
+1099 rows, 8405 columns, 37478 non-zeros
+21608 records were read
+One free row was removed
+
+lp_to_gnulp: A (1098, 8405), 37474 non0 
+
+{ gnulp_solve WOODW simplex  1098 rows, 8405 cols   
+Scaling...
+ A: min|aij| =  1.000e-02  max|aij| =  1.000e+03  ratio =  1.000e+05
+GM: min|aij| =  9.620e-02  max|aij| =  1.040e+01  ratio =  1.081e+02
+EQ: min|aij| =  9.922e-03  max|aij| =  1.000e+00  ratio =  1.008e+02
+obj: 1.30448  status: opt feas  WOODW simplex  1098 rows, 8405 cols   
+x: [0 0 0 0 0 0 0 0 0 0 ... 0 0 0 0 0 0 0 0 0 0.032]
+y: [-0.55 -0.39 -0.36 -0.43 -0.35 -0.34 -0.41 -0.35 -0.34 -0.39 ... 0 1.9 0 0 -1 -1 -1 -1 0 0]
+}
+
+time:  0.3  0.3 sec  glpk simplex WOODW
+x: ||max 0.5 at 6723  quantiles: [-3.4e-18 0 0 0 0 0 0.5] 
+c*x: min 0 = 0 * 0 at 0  quantiles: [0 0 0 0 0 0 0.5] 
+       91.16 real        90.94 user         0.39 sys
