@@ -6,11 +6,14 @@ Keywords, tags: linear programming, python, numpy, scipy, GLPK, GMPL, bridge
 the Gnu Linear Programming Kit [GLPK](https://www.gnu.org/software/glpk/)
 and the numpy-scipy-python world:
 
+	numpy/scipy arrays  <-->  LP( A b c ... )  <-->  LP files
+
 * numpy and scipy help construct large sparse LP models, and connect to dozens of specialized tools
-* GLPK reads and writes LP models in several formats: .mod .lp (aka cplex) .mps
+* GLPK reads and writes LP models in several formats: .mod, .lp (aka cplex), .mps
 
 Requirements: [GLPK](https://www.gnu.org/software/glpk/) and
 [PyGLPK](https://github.com/bradfordboyle/pyglpk) -- see "installing" below.
+
 
 #### Example: file -> numpy --
 
@@ -22,10 +25,10 @@ Requirements: [GLPK](https://www.gnu.org/software/glpk/) and
 
     # make numpy/scipy arrays A b c ... that describe your problem
     # and put them in a Bag, see "LP standard form" and "LP()" below --
-    lp = glp.LP( A= b= c= blo= lb= ub= )
+		lp = glp.LP( A= b= c= blo= lb= ub= )
 
     # save A b c ... in a text file --
-    gnulp = glp.save_lp( "my.lp", lp )  # or my.mps or my.glp
+		gnulp = glp.save_lp( "my.lp", lp )  # or my.mps or my.glp
 
     # run my.lp -> your solver in a shell or a python subprocess
     # read, plot the solution file
@@ -93,7 +96,7 @@ See the 5-line `class Bag( dict )` in `zutil.py`.)
         def lp_to_gnulp( lp, verbose=1 ):
                     """ LP( A b c blo lb ub ... ) -> glpk .matrix .rows .cols ...
         # def gnulp_solve( gnulp, solver="interior", verbose=1 ):
-        #             better save_lp | glpsol | load_lp, see below
+        #             better save_lp | glpsol | load_lp
 
     lp_linprog.py
         def lp_to_linprog( lp, verbose=1 ):
@@ -117,10 +120,13 @@ See the 5-line `class Bag( dict )` in `zutil.py`.)
 GLPK reads and writes LP problems in various formats:
 
 * .lp aka CPLEX format
-* .mps, an old format used for some ancient LP test cases e.g. `netlib`
+* .mps, an old format used for e.g. Matlab <-> solvers
 * .glp, easy to parse in python or awk
-* the gnu MathProg language [GMPL](https://en.wikibooks.org/wiki/GLPK/GMPL_(MathProg)),
-which is roughly a subset of the [AMPL](https://ampl.com) language.
+* .mod, the gnu MathProg language [GMPL](https://en.wikibooks.org/wiki/GLPK/GMPL_(MathProg)).
+This is roughly a subset of the [AMPL](https://ampl.com) language.
+
+`glp.save_lp( "my.mod", lp )` writes a `.mod` file similar to `.lp` aka cplex
+which is readable in AMPL -- in simple cases, mttiw.
 
 GLPK's solver `glpsol` has over 50 options, for simplex, interior-point, and mixed-integer (MIP).
 It carries the user's constraint names and variable names through to solution files;
@@ -129,8 +135,8 @@ splitting, sorting, plotting thousands of variables.
 The simplex solver (not ip ?) does preprocessing to make problems smaller,
 in some cases a good deal smaller.
 
-To check a file, `glpsol --check my.file`. To translate e.g. `.mps` to `.lp`,  
-`glpsol --check --freemps in.mps --wlp out.lp`.
+To check a file, `glpsol --check --format my.file`.  
+To translate e.g. `.mps` to `.lp`,  `glpsol --check --freemps in.mps --wlp out.lp`.
 (`in.mps.gz` or `out.lp.gz` compress / uncompress with `gzip` on the fly.)
 
 `glp` has a minimal `glp_solve()`, but I prefer to run `glpsol` with files, like this:
@@ -139,7 +145,6 @@ To check a file, `glpsol --check my.file`. To translate e.g. `.mps` to `.lp`,
     glpsol --options ...  my.glp  -w my.sol  --log my.glpsollog  # or whatever solver you like
         # see glpsol -h and bin/glpsols
     ipython: ... parse my.glp and my.sol, plot
-
 
 #### Look at LP in the whole flow, input - optimize - output
 
@@ -155,31 +160,22 @@ Experts say that commercial solvers are much faster than GLPK,
 but GLPK may be fast enough for *your* problem.
 
 
-#### Installing pyglpk
-
-The following worked for me in python 3.7, macos 10.10
-(after `pip install glpk`: clang failed, src/glpk.c:39:16: error).
+#### Installing glpk and pyglpk
 
     # first glpk:
-        download and unpack https://www.gnu.org/software/glpk/.../glpk-4.65.tar.gz
-        configure;  make;  make install
+	download and unpack https://www.gnu.org/software/glpk/.../glpk-4.65.tar.gz
+	configure --prefix=/opt/local;  make;  make install
 
     # pyglpk:
-    cd e.g. /opt/local/py/pyglpk
-    download https://github.com/bradfordboyle/pyglpk
-    make  # $(PYTHON) setup.py build, ln -s glpk.so
-    pip install --user setuptools_scm
-    pip install --user --upgrade -e .
-        # ~/Library/Python/3.7/easy-install.pth /glpk.egg-link
-        # -> /opt/local/py/pyglpk
-        # (ancient setup.py ?)
+    pip install --user git+https://github.com/bradfordboyle/pyglpk
+		# (git clone gets examples/*.py too)
 
     # test:
     ipython
         import glpk          # i.e. pyglpk
-        print glpk.__file__  # /opt/local/py/pyglpk/glpk.cpython-37m-darwin.so
+        print glpk.__file__  # .../glpk.so
         gnulp = glpk.LPX()   # empty
-        gnulp = glpk.LPX( gmp="xx.mod" )
+        gnulp = glpk.LPX( gmp="xx.mod" )  # Reading ... Generating ...
 
 
 #### Links
@@ -197,5 +193,5 @@ GLPK runtimes for Netlib and other test cases are under [my gists](https://gist.
 #### Comments welcome, test cases welcome.
 
 cheers  
-  -- denis 22 October 2019
+  -- denis 29 October 2019
 

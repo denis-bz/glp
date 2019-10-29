@@ -63,8 +63,8 @@ if __name__ == "__main__":
     A, b, c = Klee_Minty_cube( d, inc=inc, verbose=verbose )
 
     if save:
-        import glp  # https://gist.github.com/denis-bz glp.md
-        name = "%d-iinc%g-Klee-Minty" % (d, iinc)
+        import glp  # https://github.com/denis-bz/glp
+        name = "%d-inc%g-Klee-Minty" % (d, inc)
         lp = glp.LP( A, b, c, problemname=name )
         glp.save_lp( tag + ".lp", lp )  # .lp: cplex
 
